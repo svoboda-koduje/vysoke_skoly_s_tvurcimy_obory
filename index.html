@@ -235,15 +235,359 @@
         
         .warning { color: #d32f2f; font-weight: bold; }
         .highlight { background-color: #fff3cd; padding: 0 4px; }
+        /* --- NOVÉ PRVKY (SEARCH, MENU, ODKAZY) --- */
+        
+        /* 1. Vyhledávací pole */
+        .search-container {
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        #searchInput {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+            border: 2px solid #ddd;
+            border-radius: 30px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        #searchInput:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 10px rgba(230, 57, 70, 0.1);
+        }
+        /* --- STYLY PRO NAŠEPTÁVAČ (AUTOCOMPLETE) --- */
+.search-wrapper {
+    position: relative; /* Důležité pro pozicování nabídky */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.suggestions-box {
+    position: absolute;
+    top: 100%; /* Hned pod polem */
+    left: 15px; /* Aby lícovalo s paddingem inputu */
+    right: 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 9999;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none; /* Ve výchozím stavu skryté */
+    text-align: left;
+}
+
+.suggestion-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.2s;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #f8f9fa;
+    color: var(--accent);
+}
+
+.suggestion-main {
+    font-weight: bold;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.suggestion-sub {
+    font-size: 0.8rem;
+    color: #888;
+    display: block;
+}
+
+        /* 2. Hamburger Menu (Plovoucí) */
+        .hamburger-icon {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: var(--primary);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* --- ÚPRAVA MENU PRO ROZBALOVÁNÍ (AKORDEON) --- */
+.sidenav {
+    height: 100%; /* Plná výška */
+    width: 0; /* Výchozí stav - zavřeno */
+    position: fixed; /* Fixní pozice přes celou obrazovku */
+    z-index: 2000; /* Musí být nad vším ostatním */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: auto; 
+    transition: 0.5s; /* Animace vysunutí */
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+/* Styl pro křížek na zavření */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #818181;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn:hover {
+    color: #f1f1f1;
+}
+
+/* Styl hlavního tlačítka kategorie */
+.dropdown-btn {
+    padding: 15px 20px; /* Větší odsazení pro prst */
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    display: flex; /* Flexbox pro zarovnání textu a šipky */
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 1px solid #333; /* Jemná linka mezi kategoriemi */
+    transition: 0.3s;
+}
+
+.dropdown-btn:hover {
+    color: var(--accent); /* Zčervená při najetí */
+}
+
+/* Styly pro kontejner s konkrétními školami (skryté) */
+.dropdown-container {
+    display: none; /* Ve výchozím stavu skryto */
+    background-color: #1a1a1a; /* O něco světlejší pozadí než hlavní menu */
+    padding-left: 15px; /* Odsazení zleva pro hierarchii */
+}
+
+/* Odkazy na konkrétní školy uvnitř */
+.dropdown-container a {
+    padding: 12px 16px;
+    font-size: 0.95rem; /* Menší písmo pro pod-položky */
+    color: #bbb;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.dropdown-container a:hover {
+    color: white;
+    background-color: transparent;
+    padding-left: 20px; /* Jemný pohyb doprava při hoveru */
+}
+
+/* Aktivní stav (když je rozbaleno) */
+.active-dropdown {
+    background-color: #222;
+    color: var(--accent);
+}
+
+/* Šipka */
+.arrow {
+    border: solid #888;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+    margin-right: 10px;
+}
+
+.active-dropdown .arrow {
+    transform: rotate(-135deg); /* Otočení šipky nahoru */
+    border-color: var(--accent);
+}
+
+        /* 3. Dropdown Odkazy */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .dropbtn {
+            background-color: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color: #c42b36;}
+        /* --- PLOVOUCÍ TLAČÍTKO ZPĚT NAHORU --- */
+#backToTopBtn {
+    display: none; /* Ve výchozím stavu skryté */
+    position: fixed; /* Fixní pozice vůči oknu prohlížeče */
+    bottom: 30px; /* Vzdálenost odspodu */
+    right: 30px; /* Vzdálenost zprava */
+    z-index: 999; /* Aby bylo nad ostatním obsahem */
+    border: none;
+    outline: none;
+    background-color: var(--accent); /* Vaše červená barva */
+    color: white;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Kulatý tvar */
+    font-size: 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Stín pro efekt hloubky */
+    transition: transform 0.3s, background-color 0.3s;
+    align-items: center;
+    justify-content: center;
+    line-height: 1; /* Zarovnání šipky */
+}
+
+#backToTopBtn:hover {
+    background-color: #c42b36; /* Tmavší odstín při najetí */
+    transform: scale(1.1); /* Jemné zvětšení */
+}
+
+/* (Volitelné) Skrytí starých textových odkazů, aby nepřekážely */
+.back-link {
+    display: none; 
+}
 
     </style>
 </head>
 <body>
+<div class="hamburger-icon" onclick="openNav()">
+    <span>☰ Menu</span>
+</div>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#" onclick="resetAndClose()" style="border-bottom: 1px solid #444; margin-bottom: 10px; color: #fff; padding-left: 20px;">▲ Zpět nahoru</a>
+
+    <button class="dropdown-btn">1. Elitní akademie <i class="arrow"></i></button>
+    <div class="dropdown-container">
+        <a href="#avu" onclick="resetAndClose()">AVU Praha</a>
+        <a href="#umprum" onclick="resetAndClose()">UMPRUM</a>
+        <a href="#famu" onclick="resetAndClose()">FAMU</a>
+        <a href="#jamu" onclick="resetAndClose()">JAMU Brno</a>
+    </div>
+
+    <button class="dropdown-btn">2. Univerzitní fakulty <i class="arrow"></i></button>
+    <div class="dropdown-container">
+        <a href="#favu" onclick="resetAndClose()">FaVU VUT Brno</a>
+        <a href="#fmk" onclick="resetAndClose()">FMK UTB Zlín</a>
+        <a href="#fud" onclick="resetAndClose()">FUD UJEP Ústí</a>
+        <a href="#fdu" onclick="resetAndClose()">Sutnarka Plzeň</a>
+    </div>
+
+    <button class="dropdown-btn">3. Specializované (grafika atd.) <i class="arrow"></i></button>
+    <div class="dropdown-container">
+        <a href="#fua" onclick="resetAndClose()">FUA TUL Liberec</a>
+        <a href="#ft-tul" onclick="resetAndClose()">FT TUL (Textil)</a>
+        <a href="#fu-ou" onclick="resetAndClose()">FU OU Ostrava</a>
+        <a href="#uhk" onclick="resetAndClose()">UHK (Grafika)</a>
+        <a href="#upce-res" onclick="resetAndClose()">UPCE Restaurování</a>
+        <a href="#upce-poly" onclick="resetAndClose()">UPCE Polygrafie</a>
+    </div>
+
+    <button class="dropdown-btn">4. Architektura <i class="arrow"></i></button>
+    <div class="dropdown-container">
+        <a href="#fa-cvut" onclick="resetAndClose()">FA ČVUT Praha</a>
+        <a href="#fa-vut" onclick="resetAndClose()">FA VUT Brno</a>
+        <a href="#mendelu" onclick="resetAndClose()">MENDELU Design</a>
+        <a href="#vspj" onclick="resetAndClose()">VŠPJ Jihlava</a>
+        <a href="#vscht" onclick="resetAndClose()">VŠCHT Restaurování</a>
+    </div>
+
+    <button class="dropdown-btn">5. Pedagogické <i class="arrow"></i></button>
+    <div class="dropdown-container">
+        <a href="#pedf-uk" onclick="resetAndClose()">PedF UK Praha</a>
+        <a href="#pedf-mu" onclick="resetAndClose()">PedF MU Brno</a>
+        <a href="#pedf-upol" onclick="resetAndClose()">PedF UPOL Olomouc</a>
+        <a href="#pedf-ou" onclick="resetAndClose()">PedF OU Ostrava</a>
+        <a href="#ff-fakulty" onclick="resetAndClose()">Filozofické fakulty</a>
+    </div>
+
+    <button class="dropdown-btn">6. Fotografie <i class="arrow"></i></button>
+    <div class="dropdown-container">
+        <a href="#itf" onclick="resetAndClose()">ITF Opava</a>
+    </div>
+
+    <button class="dropdown-btn">7. Soukromé školy <i class="arrow"></i></button>
+    <div class="dropdown-container">
+        <a href="#vskk" onclick="resetAndClose()">VŠKK Praha</a>
+        <a href="#scholastika" onclick="resetAndClose()">Scholastika</a>
+        <a href="#adi" onclick="resetAndClose()">ADI</a>
+        <a href="#pcu" onclick="resetAndClose()">PCU (Prague City)</a>
+        <a href="#archip" onclick="resetAndClose()">ARCHIP</a>
+    </div>
+</div>
 
 <div class="container">
     <header>
         <h1>Sjednocený kompletní přehled VŠ<br>s tvůrčími obory</h1>
         <p>Detailní průvodce pro uchazeče (Aktualizace pro rok 2026)</p>
+    <div class="dropdown">
+            <button class="dropbtn">Externí odkazy ▼</button>
+            <div class="dropdown-content">
+                <a href="https://www.vysokeskoly.cz/prehled-skol" target="_blank">Vysokeskoly.cz</a>
+                <a href="https://gaudeamus.cz/praha/studenti" target="_blank">Gaudeamus.cz</a>
+            </div>
+        </div>
+
+        <div class="search-container">
+    <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="🔍 Hledat školu, obor (např. Grafika)..." autocomplete="off">
+        <div id="suggestionsList" class="suggestions-box"></div>
+    </div>
+</div>
     </header>
 
     <div class="nav-wrapper">
@@ -1365,12 +1709,111 @@
         </div>
         <a href="#" class="back-link">↑ Zpět na rozcestník</a>
     </article>
+    <button id="backToTopBtn" onclick="scrollToTop()" title="Zpět na rozcestník">↑</button>
 
-    <footer>
-        <p>© 2026 | Vygenerováno v Gemini Pro pod promptovým vedením Mgr. Jaroslava Svobody</p>
-    </footer>
+<footer>
+    <p>© 2026 | Vygenerováno v Gemini Pro pod promptovým vedením Mgr. Jaroslava Svobody</p>
+</footer>
+
 
 </div>
+<script>
+    /* --- 1. GLOBÁLNÍ PROMĚNNÉ --- */
+    let searchIndex = [];
 
+    function removeAccents(str) {
+        if (!str) return "";
+        return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    }
+
+    /* --- 2. START PO NAČTENÍ --- */
+    document.addEventListener("DOMContentLoaded", function() {
+        buildSearchIndex();
+        
+        // Nastavení hledání
+        const input = document.getElementById("searchInput");
+        if (input) {
+            input.addEventListener("input", function() { handleSearch(this.value); });
+            input.addEventListener("keydown", function(e) { if (e.key === "Enter") { e.preventDefault(); input.blur(); } });
+        }
+        document.addEventListener("click", function(e) { if (e.target !== input) { document.getElementById("suggestionsList").style.display = 'none'; } });
+
+        // Nastavení MENU (Akordeon) - ZDE BYLA CHYBA VE VAŠEM KÓDU
+        var dropdowns = document.getElementsByClassName("dropdown-btn");
+        for (var i = 0; i < dropdowns.length; i++) {
+            dropdowns[i].addEventListener("click", function() {
+                this.classList.toggle("active-dropdown");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    });
+
+    /* --- 3. VYHLEDÁVÁNÍ --- */
+    function buildSearchIndex() {
+        const cards = document.getElementsByClassName("school-card");
+        for (let card of cards) {
+            searchIndex.push({
+                id: card.id,
+                title: card.querySelector("h3") ? card.querySelector("h3").innerText : "Škola",
+                contentClean: removeAccents(card.innerText)
+            });
+        }
+    }
+
+    function handleSearch(query) {
+        const box = document.getElementById("suggestionsList");
+        const cleanQuery = removeAccents(query).trim();
+        if (cleanQuery.length === 0) { box.style.display = 'none'; return; }
+        
+        const matches = searchIndex.filter(item => item.contentClean.includes(cleanQuery));
+        renderSuggestions(matches, query);
+    }
+
+    function renderSuggestions(matches, query) {
+        const box = document.getElementById("suggestionsList");
+        box.innerHTML = "";
+        if (matches.length === 0) { box.style.display = 'none'; return; }
+        
+        matches.slice(0, 8).forEach(match => {
+            const div = document.createElement("div");
+            div.className = "suggestion-item";
+            let subText = !removeAccents(match.title).includes(removeAccents(query)) ? "Nalezeno v textu" : "Škola / Fakulta";
+            div.innerHTML = `<span class="suggestion-main">${match.title}</span><span class="suggestion-sub">${subText}</span>`;
+            div.onclick = function() { scrollToSchool(match.id); };
+            box.appendChild(div);
+        });
+        box.style.display = 'block';
+    }
+
+    /* --- 4. NAVIGACE --- */
+    function scrollToSchool(id) {
+        const el = document.getElementById(id);
+        if (el) {
+            document.getElementById("suggestionsList").style.display = 'none';
+            document.getElementById("searchInput").value = "";
+            closeNav();
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            el.style.transition = "background 0.5s";
+            el.style.backgroundColor = "#fff3cd";
+            setTimeout(() => { el.style.backgroundColor = "#ffffff"; }, 1500);
+        }
+    }
+
+    function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
+    function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
+    function resetAndClose() { closeNav(); window.scrollTo({top: 0, behavior: 'smooth'}); }
+
+    /* --- 5. TLAČÍTKO NAHORU --- */
+    window.onscroll = function() {
+        var btn = document.getElementById("backToTopBtn");
+        if (btn) btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "flex" : "none";
+    };
+    function scrollToTop() { window.scrollTo({top: 0, behavior: 'smooth'}); }
+</script>
 </body>
 </html>
