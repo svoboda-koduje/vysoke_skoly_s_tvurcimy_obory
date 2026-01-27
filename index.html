@@ -54,6 +54,7 @@
             border-bottom: 2px solid #ddd;
             padding-bottom: 15px;
             margin-bottom: 30px;
+            padding-left: 20px;
         }
 
         h3 {
@@ -222,6 +223,19 @@
             text-decoration: none;
             margin-left: 15px;
             font-weight: normal;
+        }
+        .map-link {
+            font-size: 0.9rem;
+            color: #28a745; /* Zelená barva pro mapy, aby se odlišila od webu */
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        .map-link:hover {
+            color: #1e7e34;
+            text-decoration: underline;
         }
         .field-link {
     color: #333; /* Barva textu (černá/šedá), aby to nerušilo */
@@ -546,6 +560,7 @@
         <a href="#uhk" onclick="resetAndClose()">UHK (Grafika)</a>
         <a href="#upce-res" onclick="resetAndClose()">UPCE Restaurování</a>
         <a href="#upce-poly" onclick="resetAndClose()">UPCE Polygrafie</a>
+        <a href="#vse" onclick="resetAndClose()">VŠE (Multimédia)</a>
     </div>
 
     <button class="dropdown-btn">4. Architektura <i class="arrow"></i></button>
@@ -631,6 +646,7 @@
                     <a href="#uhk" class="nav-btn">UHK (Grafika/Textil)</a>
                     <a href="#upce-res" class="nav-btn">UPCE Restaurování</a>
                     <a href="#upce-poly" class="nav-btn">UPCE Polygrafie</a>
+                    <a href="#vse" class="nav-btn">VŠE Praha (Multimédia)</a>
                 </div>
             </div>
             <div class="nav-group">
@@ -674,6 +690,7 @@
                     <a href="#fud" class="nav-btn">FUD UJEP</a>
                     <a href="#fmk" class="nav-btn">FMK UTB</a>
                     <a href="#uhk" class="nav-btn">UHK</a>
+                    <a href="#vse" class="nav-btn">VŠE</a>
                     <a href="#soukrome" class="nav-btn">Soukromé (VŠKK, Scholastika...)</a>
                 </div>
             </div>
@@ -827,6 +844,7 @@
             <div>
                 <h3>AVU – Akademie výtvarných umění v Praze</h3>
                 <a href="https://www.avu.cz" target="_blank" class="web-link">🔗 Web AVU</a>
+                <a href="https://mapy.cz/zakladni?q=Akademie výtvarných umění Praha" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-elita">elita (10–15 %)</span>
         </div>
@@ -884,6 +902,7 @@
             <div>
                 <h3>UMPRUM – Vysoká škola uměleckoprůmyslová</h3>
                 <a href="https://www.umprum.cz" target="_blank" class="web-link">🔗 Web UMPRUM</a>
+                <a href="https://mapy.cz/zakladni?q=UMPRUM+nám.+Jana+Palacha+Praha" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-elita">Extrémní výběr (9–12 %)</span>
         </div>
@@ -936,6 +955,7 @@
             <div>
                 <h3>FAMU – Filmová a televizní fakulta AMU</h3>
                 <a href="https://www.famu.cz" target="_blank" class="web-link">🔗 Web FAMU</a>
+                <a href="https://mapy.com/cs/zakladni?q=FAMU%20Smetanovo%20n%C3%A1b%C5%99.%20Praha&source=firm&id=652397&ds=2&x=14.4132050&y=50.0817299&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-elita">Velmi nízká průchodnost</span>
         </div>
@@ -974,6 +994,7 @@
             <div>
                 <h3>JAMU – Divadelní fakulta (Brno)</h3>
                 <a href="https://df.jamu.cz" target="_blank" class="web-link">🔗 Web DF JAMU</a>
+                <a href="https://mapy.com/cs/zakladni?q=Divadeln%C3%AD%20fakulta%20JAMU%20Brno&source=firm&id=191600&ds=2&x=16.6103523&y=49.1961316&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-elita">Scénografie</span>
         </div>
@@ -1022,6 +1043,7 @@
             <div>
                 <h3>FaVU VUT – Fakulta výtvarných umění Brno</h3>
                 <a href="https://www.favu.vut.cz" target="_blank" class="web-link">🔗 Web FaVU</a>
+                <a href="https://mapy.com/cs/zakladni?q=FaVU%20VUT%20Brno&source=firm&id=360734&ds=2&x=16.6031214&y=49.2016500&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-uni">Technicko-umělecká</span>
         </div>
@@ -1073,6 +1095,7 @@
             <div>
                 <h3>FMK UTB – Fakulta multimediálních komunikací Zlín</h3>
                 <a href="https://fmk.utb.cz" target="_blank" class="web-link">🔗 Web FMK</a>
+                <a href="https://mapy.com/cs/zakladni?q=UTB%20Zl%C3%ADn&source=firm&id=362979&ds=2&x=17.6648907&y=49.2225971&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-uni">Design & Marketing</span>
         </div>
@@ -1116,6 +1139,7 @@
             <div>
                 <h3>FUD UJEP – Fakulta umění a designu Ústí n. L.</h3>
                 <a href="https://fud.ujep.cz" target="_blank" class="web-link">🔗 Web FUD</a>
+                <a href="https://mapy.com/cs/zakladni?q=Fakulta%20um%C4%9Bn%C3%AD%20a%20designu%20%C3%9Ast%C3%AD%20nad%20Labem&source=firm&id=643031&ds=2&x=14.0247000&y=50.6659000&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-uni">Střední náročnost</span>
         </div>
@@ -1155,12 +1179,10 @@
             <h4>Specifikum portfolia</h4>
             <p><span class="warning">FYZICKÉ ODEVZDÁNÍ!</span> Portfolio se odevzdává osobně 1. den zkoušky. Na rozdíl od jiných škol, zde je kladen extrémní důraz na fyzickou podobu portfolia u 2. kola. Požadují se desky portfoliové desky A1/A0 (nerolovat!), práce řaďte od nejnovějších k nejstarším, cca 20 prací a <strong>skicáky</strong> (velmi důležité pro hodnocení procesu). Očekává se koncepční myšlení – ne jen "hezké obrázky", ale řešení vizuálního problému (vizuální identita fiktivní firmy, plakátová série s jasným názorem).</p>
         </div>
-
         <div class="content-block">
             <h4>Konzultace</h4>
             <p><strong>ANO.</strong> Fakulta pořádá pravidelné kurzy kresby pro veřejnost a zveřejňuje kontakty pro individuální domluvu. DOD probíhá v listopadu.</p>
         </div>
-
         <div class="stats-box">
             <strong>Statistika:</strong> Cca 40 % přijatých.
         </div>
@@ -1172,6 +1194,7 @@
             <div>
                 <h3>FDU ZČU – „Sutnarka“ Plzeň</h3>
                 <a href="https://www.zcu.cz/cs/Admission/Study-fields/index.html?Faculty=fdu" target="_blank" class="web-link">🔗 Web Sutnarka</a>
+                <a href="https://mapy.com/cs/zakladni?q=Sutnarka&source=firm&id=650208&ds=1&x=13.3480491&y=49.7254087&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-uni">Plzeň</span>
         </div>
@@ -1228,6 +1251,7 @@
             <div>
                 <h3>FUA TUL – Umění a architektura Liberec</h3>
                 <a href="http://fua.tul.cz/" target="_blank" class="web-link">🔗 Web FUA</a>
+                <a href="https://mapy.com/cs/zakladni?source=firm&id=361849&ds=1&x=15.0752703&y=50.7726533&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-tech">Rodinná atmosféra</span>
         </div>
@@ -1265,6 +1289,7 @@
             <div>
                 <h3>FT TUL – Textilní fakulta Liberec</h3>
                 <a href="https://www.ft.tul.cz/" target="_blank" class="web-link">🔗 Web FT TUL</a>
+                <a href="https://mapy.com/cs/zakladni?q=FT%20TUL%20Studentsk%C3%A1%20Liberec&source=firm&id=361853&ds=1&x=15.0729732&y=50.7732412&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-tech">Textil & Nano</span>
         </div>
@@ -1307,6 +1332,7 @@
             <div>
                 <h3>FU OU – Fakulta umění Ostrava</h3>
                 <a href="https://fu.osu.cz/studijniobory/" target="_blank" class="web-link">🔗 Web FU OU</a>
+                <a href="https://mapy.com/cs/zakladni?q=Fakulta%20um%C4%9Bn%C3%AD%20OU%20Podlahova%20Ostrava&source=firm&id=2247175&ds=1&x=18.2553260&y=49.8326200&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-uni">Ostrava</span>
         </div>
@@ -1350,6 +1376,7 @@
             <div>
                 <h3>UHK – Pedagogická fakulta (Hradec Králové)</h3>
                 <a href="https://www.uhk.cz" target="_blank" class="web-link">🔗 Web UHK</a>
+                <a href="https://mapy.com/cs/zakladni?q=n%C3%A1m.%20Svobody%20301%2F1%2C%20Hradec%20Kr%C3%A1lov%C3%A9&source=addr&id=9052185&ds=2&x=15.8267379&y=50.2095240&z=19" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-uni">Hradec Králové</span>
         </div>
@@ -1398,6 +1425,7 @@
             <div>
                 <h3>UPCE – Fakulta restaurování Litomyšl</h3>
                 <a href="https://studuj.upce.cz/fakulta-restaurovani" target="_blank" class="web-link">🔗 Web FR UPCE</a>
+                <a href="https://mapy.cz/zakladni?q=Fakulta+restaurování+Jiráskova+Litomyšl" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-uni">Litomyšl</span>
         </div>
@@ -1446,6 +1474,7 @@
             <div>
                 <h3>UPCE – Fakulta chemicko-technologická (Polygrafie)</h3>
                  <a href="https://studuj.upce.cz/fakulta-chemicko-technologicka#block-kraken-theme-views-block-programy-block-2" target="_blank" class="web-link">🔗 Web FChT</a>
+                 <a href="https://mapy.com/cs/zakladni?q=Fakulta%20chemicko-technologick%C3%A1%20Pardubice&source=firm&id=360728&ds=2&x=15.7677122&y=50.0498611&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-tech">Pardubice</span>
         </div>
@@ -1464,6 +1493,63 @@
 </div>
         <a href="#" class="back-link">↑ Zpět na rozcestník</a>
     </article>
+    <article id="vse" class="school-card">
+        <div class="school-header">
+            <div>
+                <h3>VŠE – Vysoká škola ekonomická v Praze</h3>
+                <a href="https://www.vse.cz" target="_blank" class="web-link">🔗 Web VŠE</a>
+                <a href="https://fis.vse.cz" target="_blank" class="web-link">🔗 Web Fakulty informatiky a statistiky</a>
+                <a href="https://mapy.com/cs/zakladni?q=V%C5%A0E%20Fakulty%20informatiky%20a%20statistiky%20Praha&source=firm&id=362379&ds=2&x=14.4411605&y=50.0842701&z=17" target="_blank" class="map-link">📍 Mapa</a>
+            </div>
+            <span class="meta-tag tag-tech" style="background: #e0f7fa; color: #006064; border-color: #b2ebf2;">Ekonomie & Kreativita</span>
+        </div>
+
+        <div class="quick-facts">
+            <div class="fact-item"><strong>Typ studia</strong>Bc. (3 roky), navazující Mgr.</div>
+            <div class="fact-item"><strong>Přihláška</strong>Do 30. 4. 2026</div>
+            <div class="fact-item"><strong>Poplatek</strong>960 Kč</div>
+            <div class="fact-item"><strong>Talentovky</strong>NEJSOU (rozhodují testy)</div>
+        </div>
+
+        <div class="content-block">
+            <h4>Studijní program</h4>
+            <p>
+                <strong><a href="https://kme.vse.cz/studium/bakalarske-studium/program-multimedia-v-ekonomicke-praxi/" target="_blank" class="field-link">Multimédia v ekonomické praxi</a></strong> (Fakulta informatiky a statistiky).<br>
+                Unikátní obor propojující grafický design, audiovizuální tvorbu, fotografii a webdesign s marketingem a managementem. Absolvent není "jen" grafik, ale rozumí byznysu a uplatnění tvorby na trhu.
+            </p>
+        </div>
+
+        <div class="content-block">
+            <h4>Požadavky na portfolio</h4>
+            <p>
+                <span class="highlight">Portfolio NENÍ vyžadováno pro přijetí.</span><br>
+                Škola neposuzuje výtvarný talent u přijímacího řízení. Portfolio se však velmi hodí pro předměty v 1. ročníku a pro získání stáží, ke zkoušce ho ale nenoste.
+            </p>
+        </div>
+
+        <div class="content-block">
+            <h4>Průběh zkoušek (Specifické!)</h4>
+            <p>
+                <strong><a href="https://fis.vse.cz/bakalarske-studium/prijimaci-rizeni/" target="_blank" class="field-link">Zde je web na podání přihlášky.</a></strong><br>
+                Přijetí závisí čistě na studijních předpokladech. Jsou dvě cesty:<br>
+                <strong>1. SCIO testy (OSP):</strong> Rozhodující je percentil z Obecných studijních předpokladů. Bodová hranice bývá velmi vysoká (minulý rok cca 90. percentil). Pokud podáte elektronickou přihlášku na VŠE včas (do 30. 4.), škola vám zašle poukaz na bezplatné absolvování testu OSP (varianta Mini) v termínu 23. května 2026.<br>
+                <strong>2. Přijetí bez zkoušek:</strong> Možné při splnění průměru známek ze SŠ (Matematika a Angličtina do průměru 1,75) nebo za účast v olympiádách.<br>
+                <span class="warning">Pozor:</span> Žádné kreslení na místě ani pohovory neprobíhají. Jde o "boj o body".
+            </p>
+        </div>
+
+        <div class="content-block">
+            <h4>Konzultace</h4>
+            <p>
+                <strong>NE</strong> (v uměleckém smyslu). Jelikož se nepředkládá portfolio, neprobíhají konzultace prací. Doporučuje se navštívit Den otevřených dveří pro prohlídku špičkově vybavené multimediální laboratoře.
+            </p>
+        </div>
+
+        <div class="stats-box">
+            <strong>Statistika:</strong> Extrémní zájem. Kapacita cca 60–70 studentů, hlásí se stovky. Šance na přijetí cca <strong>10–15 %</strong> (nutný špičkový výsledek v testech).
+        </div>
+        <a href="#" class="back-link">↑ Zpět na rozcestník</a>
+    </article>
 
     <h2>4. Architektura a technika</h2>
 
@@ -1472,6 +1558,7 @@
             <div>
                 <h3>FA ČVUT – Fakulta architektury Praha</h3>
                 <a href="https://www.fa.cvut.cz" target="_blank" class="web-link">🔗 Web FA ČVUT</a>
+                <a href="https://mapy.com/cs/zakladni?q=Th%C3%A1kurova%209%2C%20160%2000%20Praha%206&source=addr&id=11741367&ds=2&x=14.3896428&y=50.1050400&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-tech">Praha</span>
         </div>
@@ -1517,6 +1604,7 @@
             <div>
                 <h3>FA VUT – Fakulta architektury Brno</h3>
                 <a href="https://www.fa.vutbr.cz" target="_blank" class="web-link">🔗 Web FA VUT</a>
+                <a href="https://mapy.com/cs/zakladni?source=base&id=2564142&ds=1&x=16.5935200&y=49.1867700&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-tech">Brno</span>
         </div>
@@ -1557,6 +1645,7 @@
             <div>
                 <h3>MENDELU – Design nábytku Brno</h3>
                 <a href="https://ldf.mendelu.cz/bakalarske-studium/" target="_blank" class="web-link">🔗 Web LDF</a>
+                <a href="https://mapy.com/cs/zakladni?q=MENDELU%20Brno&source=firm&id=191599&ds=2&x=16.6161262&y=49.2099190&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-tech">Design & Dřevo</span>
         </div>
@@ -1602,6 +1691,7 @@
             <div>
                 <h3>VŠPJ – Polytechnika Jihlava</h3>
                  <a href="https://www.vspj.cz/cs/zajemce-o-studium/e-prihlaska" target="_blank" class="web-link">🔗 Web VŠPJ</a>
+                 <a href="https://mapy.com/cs/zakladni?q=V%C5%A0PJ%20Tolst%C3%A9ho%20Jihlava&source=firm&id=664046&ds=2&x=15.5826000&y=49.3990478&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-tech">Jihlava</span>
         </div>
@@ -1628,6 +1718,7 @@
             <div>
                 <h3>VŠCHT – Restaurování Praha</h3>
                 <a href="https://www.vscht.cz" target="_blank" class="web-link">🔗 Web VŠCHT</a>
+                <a href="https://mapy.com/cs/zakladni?q=V%C5%A0CHT%20Praha&source=firm&id=362957&ds=2&x=14.3898814&y=50.1033646&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-tech">Chemie & Umění</span>
         </div>
@@ -1666,6 +1757,7 @@
             <div>
                 <h3>PedF UK – Univerzita Karlova Praha</h3>
                 <a href="https://pedf.cuni.cz" target="_blank" class="web-link">🔗 Web PedF UK</a>
+                <a href="https://mapy.com/cs/zakladni?q=Pedagogick%C3%A1%20fakulta%20Univerzity%20Karlovy%20Praha&source=firm&id=360713&ds=2&x=14.4203638&y=50.0798326&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-ped">Učitelství</span>
         </div>
@@ -1697,6 +1789,7 @@
             <div>
                 <h3>PedF MU – Masarykova univerzita Brno</h3>
                 <a href="https://www.ped.muni.cz" target="_blank" class="web-link">🔗 Web PedF MU</a>
+                <a href="https://mapy.com/cs/zakladni?q=PedF%20MUNI%20Brno&source=firm&id=360725&ds=1&x=16.5953722&y=49.1872236&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-ped">Učitelství</span>
         </div>
@@ -1724,6 +1817,7 @@
             <div>
                 <h3>PedF UPOL – Univerzita Palackého Olomouc</h3>
                 <a href="https://www.pdf.upol.cz" target="_blank" class="web-link">🔗 Web PedF UPOL</a>
+                <a href="https://mapy.com/cs/zakladni?q=Pedagogick%C3%A1%20fakulta%20UPOL%20Olomouc&source=base&id=2585757&ds=2&x=17.2648460&y=49.5955930&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-ped">Učitelství</span>
         </div>
@@ -1752,6 +1846,7 @@
             <div>
                 <h3>PedF OU – Ostravská univerzita</h3>
                  <a href="https://pdf.osu.cz" target="_blank" class="web-link">🔗 Web PedF OU</a>
+                 <a href="https://mapy.com/cs/zakladni?q=Pedagogick%C3%A1%20fakulta%20Ostravsk%C3%A9%20univerzity%20Ostrava&source=firm&id=362921&ds=2&x=18.2622000&y=49.8268000&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-ped">Učitelství</span>
         </div>
@@ -1781,6 +1876,7 @@
         </div>
         <div class="content-block">
     <h4>Univerzita Karlova (FF UK)</h4>
+    <a href="https://mapy.com/cs/zakladni?q=Filozofick%C3%A1%20fakulta%20Univerzita%20Karlova%20Praha&source=firm&id=360712&ds=2&x=14.4158573&y=50.0889733&z=17" target="_blank" class="map-link">📍 Mapa</a>
     <p>
         <strong><a href="https://is.cuni.cz/studium/prijimacky/index.php?do=detail_obor&id_obor=35037/" target="_blank" class="field-link">Dějiny umění, </a>
         <a href="https://is.cuni.cz/studium/prijimacky/index.php?do=detail_obor&id_obor=35039" target="_blank" class="field-link">Estetika, </a> 
@@ -1821,6 +1917,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
 
     <h4 style="margin-top: 15px;">Masarykova univerzita (FF MU)</h4>
     <p>
+        <a href="https://mapy.com/cs/zakladni?q=FF%20MUNI%20Arna%20Nov%C3%A1ka%20Brno&source=firm&id=360724&ds=1&x=16.5984859&y=49.2004082&z=17" target="_blank" class="map-link">📍 Mapa</a><br>
         <strong><a href="https://www.muni.cz/bakalarske-a-magisterske-obory/24655-dejiny-umeni?_gl=1*1fgca3c*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAm9fLBhCQARIsAJoNOcsOfoXxTfK-NvgMCWrHIXpBohB71q6K-6OoFLmm_YMhlBwaXr9hK90aAo7NEALw_wcB&gbraid=0AAAAACjSXoCIa2gxGim1Ayo8M3ZzobdSf" target="_blank" class="field-link">Dějiny umění</a>, 
         <a href="https://www.muni.cz/bakalarske-a-magisterske-obory/24545-estetika?_gl=1*1vidmj7*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAm9fLBhCQARIsAJoNOcsOfoXxTfK-NvgMCWrHIXpBohB71q6K-6OoFLmm_YMhlBwaXr9hK90aAo7NEALw_wcB&gbraid=0AAAAACjSXoCIa2gxGim1Ayo8M3ZzobdSf" target="_blank" class="field-link">Estetika</a>, 
         <a href="https://www.muni.cz/bakalarske-a-magisterske-obory/24374-teorie-a-dejiny-filmu-a-audiovizualni-kultury?_gl=1*1vidmj7*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAm9fLBhCQARIsAJoNOcsOfoXxTfK-NvgMCWrHIXpBohB71q6K-6OoFLmm_YMhlBwaXr9hK90aAo7NEALw_wcB&gbraid=0AAAAACjSXoCIa2gxGim1Ayo8M3ZzobdSf" target="_blank" class="field-link">Teorie a dějiny filmu a audiovizuální kultury</strong></a>.<br>
@@ -1848,6 +1945,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
             <div>
                 <h3>ITF – Institut tvůrčí fotografie Opava</h3>
                 <a href="https://www.slu.cz/fpf/cz/itfkontakt" target="_blank" class="web-link">🔗 Web ITF</a>
+                <a href="https://mapy.com/cs/zakladni?q=ITF%20Bezru%C4%8Dovo%20n%C3%A1m%C4%9Bst%C3%AD%20Opava&source=firm&id=364357&ds=2&x=17.8963806&y=49.9351986&z=17" target="_blank" class="map-link">📍 Mapa</a>
             </div>
             <span class="meta-tag tag-uni">Světový unikát</span>
         </div>
@@ -1891,6 +1989,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
         <div style="margin-top: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
             <h4 id="vskk">VŠKK (Praha)</h4>
             <a href="https://www.vskk.cz/cz/program/" target="_blank" class="web-link">🔗 Web VŠKK</a>
+            <a href="https://mapy.com/cs/zakladni?q=Vysok%C3%A1%20%C5%A1kola%20kreativn%C3%AD%20komunikace%20Praha&source=firm&id=13016746&ds=2&x=14.4324031&y=50.0581506&z=17" target="_blank" class="map-link">📍 Mapa</a>
             <p><strong>Obory: <a href="https://www.vskk.cz/cz/program/design-motion-copy/graficky-a-medialni-design/" target="_blank" class="field-link">Grafický a mediální design</a>, 
         <a href="https://www.vskk.cz/cz/program/design-motion-copy/video-foto-produkce/" target="_blank" class="field-link">Video-foto produkce</a>, 
         <a href="https://www.vskk.cz/cz/program/design-motion-copy/animace-a-vizualni-efekty/" target="_blank" class="field-link">Animace a vizuální efekty</a>.</strong><br><strong>Přihláška:</strong> Celoročně (Termíny pohovorů 2026: 6. 2., 6. 3., 17. 4., 15. 5.).<br>
@@ -1903,6 +2002,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
         <div style="margin-top: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
             <h4 id="scholastika">Scholastika (VOŠ)</h4>
             <a href="https://scholastika.cz" target="_blank" class="web-link">🔗 Web Scholastika</a>
+            <a href="https://mapy.com/cs/zakladni?q=Scholastika%20%C5%98%C3%ADmsk%C3%A1%20Praha&source=firm&id=12982654&ds=2&x=14.4332460&y=50.0777688&z=17" target="_blank" class="map-link">📍 Mapa</a>
             <p><strong>Obory: <a href="https://scholastika.cz/cz/vos/graficky-design" target="_blank" class="field-link">Grafický design, </a>
             <a href="https://scholastika.cz/cz/vos/game-design" target="_blank" class="field-link">Game design</strong></a><br>
 
@@ -1917,6 +2017,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
         <div style="margin-top: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
             <h4 id="adi">ADI – ART & DESIGN INSTITUT</h4>
              <a href="https://www.adi.cz" target="_blank" class="web-link">🔗 Web ADI</a>
+             <a href="https://mapy.com/cs/zakladni?q=ART%20%26%20DESIGN%20INSTITUT%2C%20s.r.o%20Praha&source=firm&id=2145077&ds=2&x=14.4693722&y=50.0779833&z=17" target="_blank" class="map-link">📍 Mapa</a>
             <p><strong>Obory: <a href="https://www.adi.cz/studium/ateliery-a-predmety" target="_blank" class="field-link">Fotografie, Grafika/Kresba, Intermediální ateliér, Grafický design, Malba, Design prostoru/interiéru</a>.</strong><br>
             <strong>Přihláška:</strong> 12. 3. 2026 (1. termín), 31. 8. 2026 (2. termín).</strong><br>
             <strong>Školné:</strong> 54 000 Kč/semestr.<br>
@@ -1929,6 +2030,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
         <div style="margin-top: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
             <h4 id="pcu">Prague City University (PCU)</h4>
              <a href="https://www.praguecityuniversity.cz" target="_blank" class="web-link">🔗 Web PCU</a>
+             <a href="https://mapy.com/cs/letecka?q=Belgick%C3%A1%2022%2C%20Praha%202&source=addr&id=8941325&ds=2&x=14.4362853&y=50.0727158&z=17" target="_blank" class="map-link">📍 Mapa</a>
             <p><strong>Obor: <a href="https://gaudeamus.cz/fakulty/detail-fakulty/facultyHash:197baa1ffaf964d3a548f9d1edbef9be" target="_blank" class="field-link">Art & Design</strong></a> (Graphic Design, Fine Art).<br><strong>Výuka:</strong> V angličtině (britská akreditace).<br>
             <strong>Školné:</strong> 90–120 tis. Kč/rok.<br>
             <strong>Konzultace:</strong> ANO, "Portfolio review".<br>
@@ -1941,6 +2043,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
         <div style="margin-top: 20px;">
             <h4 id="archip">ARCHIP (Architektura)</h4>
              <a href="https://www.archip.eu" target="_blank" class="web-link">🔗 Web ARCHIP</a>
+             <a href="https://mapy.cz/zakladni?q=ARCHIP+Praha" target="_blank" class="map-link">📍 Mapa</a>
             <p><strong>Obor: <a href="https://www.archip.eu/bachelor-programme" target="_blank" class="field-link">Architectural Design</strong></a>.<br><strong>Přihláška:</strong> 31. 1. - 31. 5. 2026.<br>
             <strong>Školné:</strong> 45 000 Kč/semestr.<br>
             <strong>Konzultace:</strong> ANO, online i osobně.<br>
