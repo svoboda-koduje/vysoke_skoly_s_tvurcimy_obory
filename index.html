@@ -178,6 +178,7 @@ summary:hover { color: var(--blue); }
 .highlight { background: #fff3cd; padding: 0 4px; }
 .field-link { color: var(--ink); text-decoration: none; border-bottom: 1px dotted #8a969b; }
 .field-link:hover { color: var(--blue-dark); border-bottom: 1px solid var(--blue-dark); }
+.pending { font-size: .88rem !important; color: var(--wait); background: var(--wait-bg); border-radius: var(--radius); padding: 8px 12px; margin-top: 14px !important; }
 .checked { font-size: .82rem !important; color: var(--ink-2); border-top: 1px solid var(--bar); padding-top: 10px; margin-top: 14px !important; }
 .hidden { display: none !important; }
 
@@ -257,7 +258,7 @@ summary:hover { color: var(--blue); }
     <div class="hero-panel">
       <h1>Vysoké školy<br>s tvůrčími obory</h1>
       <p>Rozcestník pro maturanty, kteří se hlásí ke studiu od podzimu 2027</p>
-      <p class="hero-meta">32 škol a fakult: grafika, animace, design, architektura, fotografie i restaurování. Termíny ověřeny na webech škol 16. 9. 2026.</p>
+      <p class="hero-meta">32 škol a fakult: grafika, animace, design, architektura, fotografie i restaurování. Termíny ověřeny na webech škol 16. 9. 2026, chybějící údaje průběžně doplňujeme.</p>
     </div>
     <aside class="next" aria-labelledby="nextTitle">
       <h2 id="nextTitle">Nejbližší uzávěrka přihlášek</h2>
@@ -273,7 +274,7 @@ summary:hover { color: var(--blue); }
     <p class="section-lead">Umělecké školy chtějí přihlášky mnohem dřív než ostatní vysoké školy – většina už v listopadu 2026. Seřazeno podle uzávěrky; kliknutím na název otevřete detail školy.</p>
     <div class="table-scroll">
       <table class="deadlines">
-        <caption class="visually-hidden">Ověřené termíny přihlášek (10 škol)</caption>
+        <caption class="visually-hidden">Ověřené termíny přihlášek (13 škol)</caption>
         <thead><tr><th scope="col">Škola</th><th scope="col">Uzávěrka přihlášky</th><th scope="col">Přijímací zkoušky</th><th scope="col">Zbývá</th></tr></thead>
         <tbody>
 <tr>
@@ -297,7 +298,7 @@ summary:hover { color: var(--blue); }
 <tr>
   <th scope="row"><a href="#favu">FaVU VUT</a><span class="row-city">Brno</span></th>
   <td><strong>30. 11. 2026</strong><span class="row-note">1. 10. – 30. 11. 2026</span></td>
-  <td>1. kolo portfolio; 2. kolo v lednu, test z dějin umění 26. 1. 2027</td>
+  <td>Portfolio a dotazník do 3. 12. 2026; 2. kolo 26.–27. 1. 2027 (test z dějin umění 26. 1.)</td>
   <td class="countdown" data-date="2026-11-30">–</td>
 </tr>
 <tr>
@@ -310,6 +311,24 @@ summary:hover { color: var(--blue); }
   <th scope="row"><a href="#fdu">Sutnarka Plzeň</a></th>
   <td><strong>30. 11. 2026</strong><span class="row-note">1. 8. – 30. 11. 2026</span></td>
   <td>Talentové zkoušky 5.–7. 1. 2027</td>
+  <td class="countdown" data-date="2026-11-30">–</td>
+</tr>
+<tr>
+  <th scope="row"><a href="#fmk">FMK UTB</a><span class="row-city">Zlín</span></th>
+  <td><strong>30. 11. 2026</strong><span class="row-note">1. 9. – 30. 11. 2026 (Marketingová komunikace 1. 1. – 31. 3. 2027)</span></td>
+  <td>1. kolo 27. 12. 2026 – 8. 1. 2027 (podle programu), 2. kolo 11.–19. 1. 2027</td>
+  <td class="countdown" data-date="2026-11-30">–</td>
+</tr>
+<tr>
+  <th scope="row"><a href="#fua">FUA TUL</a><span class="row-city">Liberec</span></th>
+  <td><strong>30. 11. 2026</strong><span class="row-note">Architektura a urbanismus i Výtvarné umění</span></td>
+  <td>Leden 2027 (přesné dny v pozvánce)</td>
+  <td class="countdown" data-date="2026-11-30">–</td>
+</tr>
+<tr>
+  <th scope="row"><a href="#fa-cvut">FA ČVUT</a><span class="row-city">Praha</span></th>
+  <td><strong>30. 11. 2026</strong><span class="row-note">1. 11. – 30. 11. 2026</span></td>
+  <td>Termíny 2027 zatím nezveřejněny (loni výtvarné zkoušky 12.–30. 1., pohovory 2.–13. 3.)</td>
   <td class="countdown" data-date="2026-11-30">–</td>
 </tr>
 <tr>
@@ -340,9 +359,9 @@ summary:hover { color: var(--blue); }
       </table>
     </div>
     <div class="waiting">
-      <h3>Zatím nevyhlášeno (22 škol)</h3>
-      <p>Tyto školy termíny pro rok 2027/28 k 16. 9. 2026 nezveřejnily. Pro orientaci uvádíme loňský termín – letos se může lišit, proto web školy sledujte. Umělecké fakulty obvykle vyhlašují podmínky během října.</p>
-      <ul><li><a href="#fmk">FMK UTB</a> <span>loni do 30. 11.</span></li><li><a href="#fua">FUA TUL</a> <span>loni do 30. 11.</span></li><li><a href="#fu-ou">FU OU Ostrava</a> <span>loni na jaře</span></li><li><a href="#itf">ITF Opava</a> <span>loni portfolio poštou do 31. 3.</span></li><li><a href="#ft-tul">FT TUL</a> <span>loni do 28. 2.</span></li><li><a href="#upce-res">UPCE Restaurování</a> <span>loni do konce dubna, přílohy poštou</span></li><li><a href="#upce-poly">UPCE Polygrafie</a> <span>loni do 31. 3.</span></li><li><a href="#vse">VŠE Multimédia</a> <span>loni do 30. 4.</span></li><li><a href="#fa-cvut">FA ČVUT</a> <span>loni 1.–30. 11.</span></li><li><a href="#fa-vut">FA VUT</a> <span>loni do 18. 1.</span></li><li><a href="#mendelu">MENDELU Design</a> <span>loni do 15. 4.</span></li><li><a href="#vspj">VŠPJ Jihlava</a> <span>loni do 14. 5.</span></li><li><a href="#vscht">VŠCHT Restaurování</a> <span>loni do 31. 3.</span></li><li><a href="#uhk">UHK Grafika</a> <span>loni do 31. 3., prodlouženo do 12. 4.</span></li><li><a href="#pedf-uk">PedF UK</a> <span>loni do 28. 2.</span></li><li><a href="#pedf-upol">PdF UPOL</a> <span>loni do 15. 3.</span></li><li><a href="#pedf-ou">PdF OU</a> <span>loni do 15. 3.</span></li><li><a href="#ff-uk">FF UK</a> <span>loni do 28. 2.</span></li><li><a href="#scholastika">Scholastika (VOŠ)</a> <span>loni do 31. 5.</span></li><li><a href="#adi">ADI</a> <span>loni do 12. 3. a do 31. 8.</span></li><li><a href="#pcu">PCU</a> <span>bez loňského údaje</span></li><li><a href="#archip">ARCHIP</a> <span>loni 31. 1. – 31. 5.</span></li></ul>
+      <h3>Zatím nevyhlášeno (19 škol)</h3>
+      <p>Tyto školy termíny pro rok 2027/28 k 16. 9. 2026 nezveřejnily. Pro orientaci uvádíme loňský termín – letos se může lišit, proto web školy sledujte. <strong>Chybějící údaje budou průběžně doplňovány</strong>, jakmile je školy zveřejní (fakulty s jarní uzávěrkou vyhlašují podmínky obvykle v říjnu a listopadu).</p>
+      <ul><li><a href="#fu-ou">FU OU Ostrava</a> <span>loni do 15. 3.</span></li><li><a href="#itf">ITF Opava</a> <span>loni portfolio poštou do 31. 3.</span></li><li><a href="#ft-tul">FT TUL</a> <span>loni do 28. 2., zkouška 24.–25. 3.</span></li><li><a href="#upce-res">UPCE Restaurování</a> <span>loni do konce dubna, přílohy poštou</span></li><li><a href="#upce-poly">UPCE Polygrafie</a> <span>loni do 31. 3.</span></li><li><a href="#vse">VŠE Multimédia</a> <span>loni do 30. 4.</span></li><li><a href="#fa-vut">FA VUT</a> <span>loni do 18. 1.</span></li><li><a href="#mendelu">MENDELU Design</a> <span>loni do 15. 4.</span></li><li><a href="#vspj">VŠPJ Jihlava</a> <span>loni do 14. 5.</span></li><li><a href="#vscht">VŠCHT Restaurování</a> <span>loni do 31. 3.</span></li><li><a href="#uhk">UHK Grafika</a> <span>loni do 31. 3., prodlouženo do 12. 4.</span></li><li><a href="#pedf-uk">PedF UK</a> <span>předběžně do 28. 2. 2027 (termín UK)</span></li><li><a href="#pedf-upol">PdF UPOL</a> <span>loni do 15. 3.</span></li><li><a href="#pedf-ou">PdF OU (Bc. i Mgr.)</a> <span>loni do 15. 3.</span></li><li><a href="#ff-uk">FF UK</a> <span>předběžně do 28. 2. 2027 (termín UK)</span></li><li><a href="#scholastika">Scholastika (VOŠ)</a> <span>loni do 31. 5.</span></li><li><a href="#adi">ADI</a> <span>loni do 12. 3. a do 31. 8.</span></li><li><a href="#pcu">PCU</a> <span>bez loňského údaje</span></li><li><a href="#archip">ARCHIP</a> <span>loni 31. 1. – 31. 5.</span></li></ul>
     </div>
   </div>
 </section>
@@ -455,7 +474,7 @@ summary:hover { color: var(--blue); }
     <div class="detail-body">
 <div class="content-block">
     <h4>Studijní programy a ateliéry pro rok 2027/28</h4>
-<p><a href="https://www.umprum.cz/cs/web/katedry/architektura" target="_blank" rel="noopener" class="field-link"><strong>Architektonická tvorba</strong></a> (6leté magisterské): ateliéry architektury I, III a IV.<br><a href="https://www.umprum.cz/cs/web/katedry/design" target="_blank" rel="noopener" class="field-link"><strong>Design</strong></a>: průmyslový design, design nábytku a interiéru, produktový design; <a href="https://www.umprum.cz/cs/web/katedry/uzite-umeni" target="_blank" rel="noopener" class="field-link">sklo, keramika a porcelán, K. O. V., textil, módní tvorba, design oděvu a obuvi</a>.<br><a href="https://www.umprum.cz/cs/web/katedry/volne-umeni" target="_blank" rel="noopener" class="field-link"><strong>Volné umění</strong></a>: ateliéry volného umění I–IV.<br><a href="https://www.umprum.cz/cs/web/katedry/grafika" target="_blank" rel="noopener" class="field-link"><strong>Grafika a vizuální komunikace</strong></a>: ilustrace a grafika, tvorba písma a typografie, grafický design a vizuální komunikace, animace a film, grafický design a nová média, fotografie II, design a digitální technologie.<br>Přihlásit se lze jen do jednoho ateliéru. Teorie a dějiny umění má samostatné přijímací řízení, podmínky najdete v sekci Uchazeč na webu UMPRUM.</p>
+<p><a href="https://www.umprum.cz/cs/web/katedry/architektura" target="_blank" rel="noopener" class="field-link"><strong>Architektonická tvorba</strong></a> (6leté magisterské): ateliéry architektury I, III a IV.<br><a href="https://www.umprum.cz/cs/web/katedry/design" target="_blank" rel="noopener" class="field-link"><strong>Design</strong></a>: průmyslový design, design nábytku a interiéru, produktový design; <a href="https://www.umprum.cz/cs/web/katedry/uzite-umeni" target="_blank" rel="noopener" class="field-link">sklo, keramika a porcelán, K. O. V., textil, módní tvorba, design oděvu a obuvi</a>.<br><a href="https://www.umprum.cz/cs/web/katedry/volne-umeni" target="_blank" rel="noopener" class="field-link"><strong>Volné umění</strong></a>: ateliéry volného umění I–IV.<br><a href="https://www.umprum.cz/cs/web/katedry/grafika" target="_blank" rel="noopener" class="field-link"><strong>Grafika a vizuální komunikace</strong></a>: ilustrace a grafika, tvorba písma a typografie, grafický design a vizuální komunikace, animace a film, grafický design a nová média, fotografie II, design a digitální technologie.<br>Přihlásit se lze jen do jednoho ateliéru. <a href="https://www.umprum.cz/cs/web/katedry/teorie-a-dejiny-umeni" target="_blank" rel="noopener" class="field-link"><strong>Teorie a dějiny umění</strong></a> má samostatné přijímací řízení s pozdější uzávěrkou (loni do 31. 3.), podmínky najdete v sekci Uchazeč na webu UMPRUM.<br>Pro srovnání s dřívějším přehledem: Architektura (dříve uváděno A1–A4; pro 2027/28 vypsány ateliéry I, III a IV), Design (průmyslový, nábytek, produkt), Užité umění (sklo, keramika, K. O. V., móda, textil), Grafika (design, písmo, ilustrace, film, foto).</p>
 </div>
 
         <div class="content-block">
@@ -493,7 +512,7 @@ summary:hover { color: var(--blue); }
   </div>
   <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>2. 10. – 5. 11. 2026 (Fotografie do 27. 11. 2026)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Podle programu, termíny ve specifických podmínkách</dd></div><div><dt>Poplatek</dt><dd>1 113 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>BcA., MgA., Ph.D.</dd></div></dl>
   <ul class="tags"><li>Animace, film a hry</li><li>Fotografie</li><li class="tag-level">Náročnost přijetí: velmi vysoká (orientačně)</li></ul>
-  <p class="links"><a href="https://www.famu.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=FAMU%20Smetanovo%20n%C3%A1b%C5%99.%20Praha&amp;source=firm&amp;id=652397&amp;ds=2&amp;x=14.4132050&amp;y=50.0817299&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.famu.cz/cs/chci-studovat/bakalarske-studijni-programy/" target="_blank" rel="noopener">Zdroj údajů</a></p>
+  <p class="links"><a href="https://www.famu.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://www.famu.cz/cs/katedry/katedra-animovane-tvorby/pro-uchazece/" target="_blank" rel="noopener">Animace – pro uchazeče</a> <a href="https://mapy.com/cs/zakladni?q=FAMU%20Smetanovo%20n%C3%A1b%C5%99.%20Praha&amp;source=firm&amp;id=652397&amp;ds=2&amp;x=14.4132050&amp;y=50.0817299&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.famu.cz/cs/chci-studovat/bakalarske-studijni-programy/" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
     <div class="detail-body">
@@ -576,7 +595,7 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-ok">Termín 2027/28 ověřen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>1. 10. – 30. 11. 2026</dd></div><div><dt>Přijímací zkoušky</dt><dd>1. kolo portfolio; 2. kolo v lednu, test z dějin umění 26. 1. 2027</dd></div><div><dt>Poplatek</dt><dd>700 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>BcA. Volné umění, Design (4 roky)</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>1. 10. – 30. 11. 2026</dd></div><div><dt>Přijímací zkoušky</dt><dd>1. kolo: portfolio a dotazník v e-přihlášce do 3. 12. 2026; 2. kolo: praktické úkoly 26.–27. 1. 2027, test z dějin umění 26. 1. 2027</dd></div><div><dt>Poplatek</dt><dd>700 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>BcA. Volné umění, Design (4 roky)</dd></div></dl>
   <ul class="tags"><li>Grafický design a ilustrace</li><li>Animace, film a hry</li><li>Volné umění</li><li>Produkt, interiér, móda</li><li class="tag-level">Náročnost přijetí: velmi vysoká (orientačně)</li></ul>
   <p class="links"><a href="https://www.favu.vut.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=FaVU%20VUT%20Brno&amp;source=firm&amp;id=360734&amp;ds=2&amp;x=16.6031214&amp;y=49.2016500&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.favu.vut.cz/uchazeci/prijimacky/bakalarsky-program" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
@@ -619,22 +638,31 @@ summary:hover { color: var(--blue); }
   </details>
 </article>
 
-<article class="school" id="fmk" data-group="fakulta" data-city="Zlín" data-fields="grafika animace design foto" data-level="2" data-talent="ano" data-status="wait">
+<article class="school" id="fmk" data-group="fakulta" data-city="Zlín" data-fields="grafika animace design foto" data-level="2" data-talent="ano" data-status="ok">
   <div class="school-top">
     <div>
       <h3>FMK UTB – Fakulta multimediálních komunikací Zlín</h3>
       <p class="school-meta">Zlín, umělecká fakulta univerzity</p>
     </div>
-    <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
+    <span class="badge badge-ok">Termín 2027/28 ověřen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 30. 11.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni talentovky 5.–9. 1., 2. kolo 12.–14. 1. 2026</dd></div><div><dt>Poplatek</dt><dd>cca 800–990 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>BcA., MgA.</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>1. 9. – 30. 11. 2026 (umělecké a filmové programy); Marketingová komunikace 1. 1. – 31. 3. 2027</dd></div><div><dt>Přijímací zkoušky</dt><dd>1. kolo 27. 12. 2026 – 8. 1. 2027, 2. kolo 11.–19. 1. 2027 (podle programu); výsledky do 5. 2. 2027</dd></div><div><dt>Poplatek</dt><dd>1 050 Kč (Marketingová komunikace 520 Kč)</dd></div><div><dt>Typ studia</dt><dd>BcA., MgA.</dd></div></dl>
   <ul class="tags"><li>Grafický design a ilustrace</li><li>Animace, film a hry</li><li>Produkt, interiér, móda</li><li>Fotografie</li><li class="tag-level">Náročnost přijetí: vysoká (orientačně)</li></ul>
-  <p class="links"><a href="https://fmk.utb.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=UTB%20Zl%C3%ADn&amp;source=firm&amp;id=362979&amp;ds=2&amp;x=17.6648907&amp;y=49.2225971&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://fmk.utb.cz/studium/prijimaci-rizeni/bakalarske-studium/" target="_blank" rel="noopener">Zdroj údajů</a></p>
+  <p class="links"><a href="https://fmk.utb.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=UTB%20Zl%C3%ADn&amp;source=firm&amp;id=362979&amp;ds=2&amp;x=17.6648907&amp;y=49.2225971&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://fmk.utb.cz/studium/prijimaci-rizeni/bakalarske-programy/" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
     <div class="detail-body">
 <div class="content-block">
-    <h4>Výběr oborů vhodných pro absolventy počítačové grafiky (fakulta jich nabízí přes 20)</h4>
+    <h4>Bakalářské programy 2027/28</h4>
+    <p><strong>Multimédia</strong>: Digitální design, Game Design, Grafický design, Reklamní fotografie.<br>
+    <strong>Design</strong>: Design oděvu, Design šperku, Produktový design, Průmyslový design, Sklo, Tvorba prostoru.<br>
+    <strong>Design obuvi a módních doplňků</strong> (nově samostatný program).<br>
+    <strong>Animovaná tvorba</strong> (4 roky).<br>
+    <strong>Teorie a praxe audiovizuální tvorby</strong>: Kamera, Produkce, Režie a scenáristika, Střihová skladba, Vizuální efekty, Zvuková skladba.<br>
+    <strong>Kreativní odvětví a digitální kultura</strong>.<br>
+    <strong>Marketingová komunikace</strong> – bez talentové zkoušky, rozhoduje test OSP (Národní srovnávací zkoušky Scio, prosinec 2026 – duben 2027).<br>
+    V uměleckých programech lze podat jen jednu přihlášku do jednoho programu (volí se jedna specializace).</p>
+    <h4>Výběr oborů vhodných pro absolventy počítačové grafiky</h4>
     <ul>
         <li><strong><a href="https://fmk.utb.cz/ateliery/animovana-tvorba/" target="_blank" rel="noopener" class="field-link">Animovaná tvorba</a>:</strong> Storyboardy, ukázky animací.</li>
         <li><strong><a href="https://www.utb.cz/vyhledavac-oboru/multimedia-bc/game-design-bc/?tab=2" target="_blank" rel="noopener" class="field-link">Game Design</a>:</strong> GDD, 3–5 projektů, prototypy.</li>
@@ -651,7 +679,12 @@ summary:hover { color: var(--blue); }
         </div>        
 <div class="content-block">
             <h4>Termíny</h4>
-            <p>Termíny pro rok 2027/28 zatím fakulta nezveřejnila. Loni se přihlášky podávaly do 30. 11., talentové zkoušky (Multimédia a Design) proběhly 5.–9. 1. 2026 a 2. kolo u Multimédií 12.–14. 1. 2026. Směrnici k přijímacímu řízení hledejte na úřední desce FMK.</p>
+            <p><strong>Přihlášky:</strong> 1. 9. – 30. 11. 2026 (Marketingová komunikace 1. 1. – 31. 3. 2027).<br>
+            <strong>Multimédia:</strong> 1. kolo (elektronické odevzdání prací) 27. 12. 2026 – 3. 1. 2027, 2. kolo 11.–13. 1. 2027.<br>
+            <strong>Design a Design obuvi a módních doplňků:</strong> 1. kolo (fyzické odevzdání prací) 4.–8. 1. 2027, 2. kolo 13.–15. 1. 2027.<br>
+            <strong>Teorie a praxe audiovizuální tvorby:</strong> 1. kolo (elektronicky) 27. 12. 2026 – 3. 1. 2027, 2. kolo 13.–15. 1. 2027.<br>
+            <strong>Animovaná tvorba a Kreativní odvětví a digitální kultura:</strong> 1. kolo (elektronicky) 27. 12. 2026 – 4. 1. 2027, 2. kolo 18.–19. 1. 2027.<br>
+            Výsledky nejpozději 5. 2. 2027. Podrobnosti uvádějí směrnice děkana SD 03–08/2026 na úřední desce FMK.</p>
         </div>
         <div class="content-block">
             <h4>Konzultace</h4>
@@ -690,14 +723,14 @@ summary:hover { color: var(--blue); }
         
         <strong>Design: 
         <a href="https://fud.ujep.cz/ateliery/produktovy-design/" target="_blank" rel="noopener" class="field-link">Produktový design</a>, 
-        <a href="https://fud.ujep.cz/ateliery/design-interieru/" target="_blank" rel="noopener" class="field-link">Design interiéru</a>, 
-        <a href="https://fud.ujep.cz/ateliery/keramika/" target="_blank" rel="noopener" class="field-link">Keramika</a>, 
+        <a href="https://fud.ujep.cz/ateliery/design-interieru/" target="_blank" rel="noopener" class="field-link">Design interiéru</a> (dříve Interiérový design), 
+        <a href="https://fud.ujep.cz/ateliery/keramika/" target="_blank" rel="noopener" class="field-link">Keramika</a> (dříve Keramický design), 
         <a href="https://fud.ujep.cz/ateliery/sklo/" target="_blank" rel="noopener" class="field-link">Sklo</a>, 
         <a href="https://fud.ujep.cz/ateliery/odevni-a-textilni-design/" target="_blank" rel="noopener" class="field-link">Oděvní a textilní design</a>, <a href="https://fud.ujep.cz/ateliery/prirodni-materialy/" target="_blank" rel="noopener" class="field-link">Přírodní materiály</a>.<br></strong>
         
         <strong>Fotografie a média: 
         <a href="https://fud.ujep.cz/ateliery/fotografie/" target="_blank" rel="noopener" class="field-link">Fotografie</a>, 
-        <a href="https://fud.ujep.cz/ateliery/aplikovana-fotografie/" target="_blank" rel="noopener" class="field-link">Aplikovaná fotografie</a>, 
+        <a href="https://fud.ujep.cz/ateliery/aplikovana-fotografie/" target="_blank" rel="noopener" class="field-link">Aplikovaná fotografie</a> (dříve Aplikovaná a reklamní fotografie), 
         <a href="https://fud.ujep.cz/ateliery/time-based-media/" target="_blank" rel="noopener" class="field-link">Time-Based Media</a>, 
         <a href="https://fud.ujep.cz/ateliery/interaktivni-media/" target="_blank" rel="noopener" class="field-link">Interaktivní média</a>, <a href="https://fud.ujep.cz/ateliery/digitalni-media/" target="_blank" rel="noopener" class="field-link">Digitální média</a>.<br></strong>
         
@@ -731,7 +764,7 @@ summary:hover { color: var(--blue); }
   </div>
   <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>1. 8. – 30. 11. 2026</dd></div><div><dt>Přijímací zkoušky</dt><dd>Talentové zkoušky 5.–7. 1. 2027</dd></div><div><dt>Poplatek</dt><dd>cca 700 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>BcA., MgA.</dd></div></dl>
   <ul class="tags"><li>Grafický design a ilustrace</li><li>Animace, film a hry</li><li>Produkt, interiér, móda</li><li>Volné umění</li><li>Fotografie</li><li class="tag-level">Náročnost přijetí: vysoká (orientačně)</li></ul>
-  <p class="links"><a href="https://www.fdu.zcu.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Sutnarka&amp;source=firm&amp;id=650208&amp;ds=1&amp;x=13.3480491&amp;y=49.7254087&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.fdu.zcu.cz/cs/Admission/BachelorStudies/Applicant.html" target="_blank" rel="noopener">Zdroj údajů</a></p>
+  <p class="links"><a href="https://www.fdu.zcu.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Sutnarka&amp;source=firm&amp;id=650208&amp;ds=1&amp;x=13.3480491&amp;y=49.7254087&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.zcu.cz/cs/Admission/Study-fields/index.html?Faculty=fdu" target="_blank" rel="noopener">Nabídka oborů</a> <a href="https://www.fdu.zcu.cz/cs/Admission/BachelorStudies/Applicant.html" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
     <div class="detail-body">
@@ -776,17 +809,17 @@ summary:hover { color: var(--blue); }
   </details>
 </article>
 
-<article class="school" id="fua" data-group="fakulta" data-city="Liberec" data-fields="volne architektura" data-level="3" data-talent="ano" data-status="wait">
+<article class="school" id="fua" data-group="fakulta" data-city="Liberec" data-fields="volne architektura" data-level="3" data-talent="ano" data-status="ok">
   <div class="school-top">
     <div>
       <h3>FUA TUL – Fakulta umění a architektury Liberec</h3>
       <p class="school-meta">Liberec, umělecká fakulta univerzity</p>
     </div>
-    <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
+    <span class="badge badge-ok">Termín 2027/28 ověřen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 30. 11.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni v lednu; test z dějin umění, u architektury i matematika</dd></div><div><dt>Poplatek</dt><dd>700 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc., BcA., Ing. arch.</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>do 30. 11. 2026 (Architektura a urbanismus i Výtvarné umění)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Leden 2027 (přesné dny v pozvánce); test z dějin umění, u architektury i matematika</dd></div><div><dt>Poplatek</dt><dd>700 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc., BcA., Ing. arch.</dd></div></dl>
   <ul class="tags"><li>Volné umění</li><li>Architektura</li><li class="tag-level">Náročnost přijetí: střední (orientačně)</li></ul>
-  <p class="links"><a href="https://fua.tul.cz/" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?source=firm&amp;id=361849&amp;ds=1&amp;x=15.0752703&amp;y=50.7726533&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://tul.cz/univerzita/fua/studium/prijimaci-rizeni" target="_blank" rel="noopener">Zdroj údajů</a></p>
+  <p class="links"><a href="https://fua.tul.cz/" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?source=firm&amp;id=361849&amp;ds=1&amp;x=15.0752703&amp;y=50.7726533&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.fua.tul.cz/studium/prijimaci-rizeni" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
     <div class="detail-body">
@@ -801,6 +834,11 @@ summary:hover { color: var(--blue); }
 </div>
 
         <div class="content-block">
+            <h4>Termíny a zkoušky 2027/28</h4>
+            <p>Přihlášky do bakalářského studia obou programů do <strong>30. 11. 2026</strong>, přijímací zkouška v <strong>lednu 2027</strong>. Fakulta zveřejňuje <a href="https://doc.tul.cz/13953" target="_blank" rel="noopener">průběh přijímacích zkoušek</a>, <a href="https://doc.tul.cz/14825" target="_blank" rel="noopener">vzorový test z matematiky</a> a <a href="https://doc.tul.cz/14826" target="_blank" rel="noopener">vzorový test z dějin umění a architektury</a> (u Výtvarného umění <a href="https://art.tul.cz/www/pdf/prijimaci_rizeni_vzor.pdf" target="_blank" rel="noopener">vzorový test z dějin umění</a>). Matematický test se týká jen architektury.</p>
+        </div>
+
+        <div class="content-block">
             <h4>Konzultace</h4>
             <p><strong>ANO.</strong> Workshopy, veřejné akce v rámci <strong>Art Week Liberec</strong>. Na DOD probíhají konzultace portfolií se studenty a pedagogy.</p>
         </div>
@@ -813,7 +851,7 @@ summary:hover { color: var(--blue); }
   </details>
 </article>
 
-<article class="school" id="fu-ou" data-group="fakulta" data-city="Ostrava" data-fields="volne grafika" data-level="3" data-talent="ano" data-status="wait">
+<article class="school" id="fu-ou" data-group="fakulta" data-city="Ostrava" data-fields="volne grafika animace foto" data-level="3" data-talent="ano" data-status="wait">
   <div class="school-top">
     <div>
       <h3>FU OU – Fakulta umění Ostravské univerzity</h3>
@@ -821,8 +859,8 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni na jaře)</dd></div><div><dt>Přijímací zkoušky</dt><dd>1. kolo portfolio, 2. kolo třídenní</dd></div><div><dt>Poplatek</dt><dd>800 Kč (dle podmínek 2026/27)</dd></div><div><dt>Typ studia</dt><dd>BcA., MgA.</dd></div></dl>
-  <ul class="tags"><li>Volné umění</li><li>Grafický design a ilustrace</li><li class="tag-level">Náročnost přijetí: střední (orientačně)</li></ul>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 15. 3. 2026, podmínky fakulta vyhlásila v listopadu)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni: 1. kolo portfolio (PDF v ZIP do 100 MB) do 15. 3., 2. kolo 7.–9. 4. 2026 (Grafický design 8.–9. 4.)</dd></div><div><dt>Poplatek</dt><dd>800 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>BcA., MgA.</dd></div></dl>
+  <ul class="tags"><li>Volné umění</li><li>Grafický design a ilustrace</li><li>Animace, film a hry</li><li>Fotografie</li><li class="tag-level">Náročnost přijetí: střední (orientačně)</li></ul>
   <p class="links"><a href="https://fu.osu.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Fakulta%20um%C4%9Bn%C3%AD%20OU%20Podlahova%20Ostrava&amp;source=firm&amp;id=2247175&amp;ds=1&amp;x=18.2553260&amp;y=49.8326200&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://dokumenty.osu.cz/fu/pr2026/podminky-prijeti-ar-2026-2027.pdf" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
@@ -830,17 +868,20 @@ summary:hover { color: var(--blue); }
 <div class="content-block">
     <h4>Obory</h4>
     <p>
-        <strong>Volné umění (<a href="https://fu.osu.cz/studijniobory/?specializaceid=2985" target="_blank" rel="noopener" class="field-link">Malba</a>, 
+        <strong>Volné umění (<a href="https://fu.osu.cz/studijniobory/?specializaceid=2985" target="_blank" rel="noopener" class="field-link">Malba</a> – specializace Malba 1 a Malba 2, 
         <a href="https://fu.osu.cz/studijniobory/?specializaceid=3053" target="_blank" rel="noopener" class="field-link">Sochařství - volná tvorba</a>, 
         <a href="https://fu.osu.cz/studijniobory/?specializaceid=3481" target="_blank" rel="noopener" class="field-link">Grafický design a vizuální komunikace</a>)<br> 
-        <a href="https://fu.osu.cz/studijniobory/?specializaceid=3082" target="_blank" rel="noopener" class="field-link">Knižní design a intermédia</a></strong> (Video, Performance)<br> 
-        <a href="https://fu.osu.cz/studijniobory/?specializaceid=2988" target="_blank" rel="noopener" class="field-link"><strong>Grafika a kresba</strong></a> (Volná tvorba, otevřená média)
+        <a href="https://fu.osu.cz/studijniobory/?specializaceid=3082" target="_blank" rel="noopener" class="field-link">Knižní design a intermédia</a></strong> (Video, Performance) – v podmínkách 2026/27 jako program <strong>Intermediální umění</strong> se specializacemi Animovaná tvorba, Fotografie, Knižní design, Koncept-objekt-instalace a Video-multimédia-performance<br> 
+        <a href="https://fu.osu.cz/studijniobory/?specializaceid=2988" target="_blank" rel="noopener" class="field-link"><strong>Grafika a kresba</strong></a> (Volná tvorba, otevřená média; specializace Grafika a Kresba)<br>
+        Přehled všech programů: <a href="https://fu.osu.cz/studijniobory/" target="_blank" rel="noopener" class="field-link">studijní programy FU OU</a>.
     </p>
 </div>
 
         <div class="content-block">
             <h4>Portfolio</h4>
-            <p>Elektronické (PDF/odkazy), 10–20 prací (dokumentace projektů).</p>
+            <p>Elektronické: jeden PDF soubor zabalený do ZIP (max. 100 MB) jako příloha e-přihlášky, součástí je strukturovaný životopis; odkazy na práce jsou povoleny, počet stran není omezen. Orientačně 10–20 prací (dokumentace projektů).<br>
+            <strong>Průběh (podle podmínek 2026/27):</strong> 1. kolo hodnotí portfolio, 2. kolo je třídenní talentová zkouška se zadanými úkoly a ústní rozpravou nad domácími pracemi a dějinami umění; k přijetí je potřeba aspoň 75 ze 100 bodů. Náhradní termín se poskytuje jen při kolizi s maturitou.<br>
+            <span class="warning">Pozor:</span> v některých přehledech se objevuje listopadová uzávěrka nebo nulový poplatek – podle podmínek fakulty pro 2026/27 to neplatilo (přihlášky do 15. 3., poplatek 800 Kč). Podmínky pro 2027/28 zatím nevyšly.</p>
         </div>
         
         <div class="content-block">
@@ -851,6 +892,7 @@ summary:hover { color: var(--blue); }
         <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> Šance 30–40 % (nabírají 10–15 studentů ze 40).
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -864,9 +906,9 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni portfolio poštou do 31. 3.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni květen–červen; 2. kolo ústní</dd></div><div><dt>Poplatek</dt><dd>500 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc., MgA. – kombinované (dálkové) studium</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni portfolio poštou do 31. 3.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni květen–červen; 2. kolo ústní</dd></div><div><dt>Poplatek</dt><dd>500 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc., MgA. – kombinované (dálkové) studium</dd></div></dl>
   <ul class="tags"><li>Fotografie</li><li class="tag-level">Náročnost přijetí: střední (orientačně)</li></ul>
-  <p class="links"><a href="http://www.itf.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=ITF%20Bezru%C4%8Dovo%20n%C3%A1m%C4%9Bst%C3%AD%20Opava&amp;source=firm&amp;id=364357&amp;ds=2&amp;x=17.8963806&amp;y=49.9351986&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="http://www.itf.cz/index.php?clanek=18" target="_blank" rel="noopener">Zdroj údajů</a></p>
+  <p class="links"><a href="http://www.itf.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=ITF%20Bezru%C4%8Dovo%20n%C3%A1m%C4%9Bst%C3%AD%20Opava&amp;source=firm&amp;id=364357&amp;ds=2&amp;x=17.8963806&amp;y=49.9351986&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.slu.cz/fpf/cz/itfkontakt" target="_blank" rel="noopener">Kontakt</a> <a href="http://www.itf.cz/index.php?clanek=18" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
     <div class="detail-body">
@@ -884,6 +926,7 @@ summary:hover { color: var(--blue); }
         <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> 40–50 % (stovky uchazečů).
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -899,9 +942,9 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 28. 2.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni talentová zkouška koncem března</dd></div><div><dt>Poplatek</dt><dd>700 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc., Ing.</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 28. 2.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni jednodenní talentová zkouška 24.–25. 3. 2026</dd></div><div><dt>Poplatek</dt><dd>700 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc. Návrhářství, MgA. Design</dd></div></dl>
   <ul class="tags"><li>Produkt, interiér, móda</li><li class="tag-level">Náročnost přijetí: střední (orientačně)</li></ul>
-  <p class="links"><a href="https://www.ft.tul.cz/" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=FT%20TUL%20Studentsk%C3%A1%20Liberec&amp;source=firm&amp;id=361853&amp;ds=1&amp;x=15.0729732&amp;y=50.7732412&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.ft.tul.cz/" target="_blank" rel="noopener">Zdroj údajů</a></p>
+  <p class="links"><a href="https://www.ft.tul.cz/" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=FT%20TUL%20Studentsk%C3%A1%20Liberec&amp;source=firm&amp;id=361853&amp;ds=1&amp;x=15.0729732&amp;y=50.7732412&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.ft.tul.cz/uchazeci/prijimaci-rizeni/navrharstvi" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
     <div class="detail-body">
@@ -909,13 +952,16 @@ summary:hover { color: var(--blue); }
     <h4>Obor Návrhářství</h4>
     <p>
         Studijní program <a href="https://www.tul.cz/uchazeci/studijni-programy/program/1324_navrharstvi/" target="_blank" rel="noopener" class="field-link"><strong>Návrhářství (Bc.)</strong></a>. Příbuzné programy fakulty: <a href="https://www.tul.cz/uchazeci/studijni-programy/program/1316_textilni-marketing/" target="_blank" rel="noopener" class="field-link">Textilní marketing</a>, <a href="https://www.tul.cz/uchazeci/studijni-programy/program/1321_textilni-technologie-materialy-a-nanomaterialy/" target="_blank" rel="noopener" class="field-link">Textilní technologie, materiály a nanomateriály</a>. 
-        Textil, oděv, sklo, šperk. Unikátní propojení s technologiemi (nanovlákna, inteligentní textilie).
+        Textil, oděv, sklo, šperk. Unikátní propojení s technologiemi (nanovlákna, inteligentní textilie).<br>
+        Návrhářství má <strong>3 specializace</strong>; všichni začínají ve specializaci Textilní technologie a vzorování a po prvním semestru si volí další směr (o zařazení rozhoduje komise podle výsledků v ateliérech). Navazuje magisterský program <strong>Design – textil, oděv, sklo, šperk</strong> (MgA.).<br>
+        Talentovou zkoušku mají jen Návrhářství (a magisterský Design); technické programy jako Textilní marketing nebo Textilní technologie, materiály a nanomateriály přijímají bez talentové zkoušky a mají vlastní termíny.
     </p>
 </div>
 
         <div class="content-block">
             <h4>Portfolio</h4>
-            <p>Fyzické, přináší se k talentové zkoušce (15–20 ks). Kresba, malba, návrhy dezénů, foto realizací.</p>
+            <p>Fyzické, přináší se k talentové zkoušce (minimálně 15 ks, orientačně 15–20). Kresba, malba, návrhy dezénů, foto realizací – např. studie hlavy, figury, zátiší, přírody či města kresebně i barevně, prostorové práce lze doložit fotografiemi.<br>
+            <strong>Talentová zkouška (loni):</strong> malířská kompozice na zadané téma (A2, tempera nebo akryl), prostorová kompozice z papíru a kresba zátiší (min. A1).</p>
         </div>
         
         <div class="content-block">
@@ -926,6 +972,7 @@ summary:hover { color: var(--blue); }
         <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> Úspěšnost 40–50 %. "Síto" je často až následné studium (technologie).
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -939,7 +986,7 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do konce dubna, přílohy poštou)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni 9.–11. 6. 2026 (domácí práce se odevzdávají první den)</dd></div><div><dt>Poplatek</dt><dd>650 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>BcA., MgA.</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do konce dubna, přílohy poštou)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni 9.–11. 6. 2026 (domácí práce se odevzdávají první den)</dd></div><div><dt>Poplatek</dt><dd>650 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>BcA., MgA.</dd></div></dl>
   <ul class="tags"><li>Restaurování</li><li class="tag-level">Náročnost přijetí: vysoká (orientačně)</li></ul>
   <p class="links"><a href="https://studuj.upce.cz/fakulta-restaurovani" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.cz/zakladni?q=Fakulta+restaurov%C3%A1n%C3%AD+Jir%C3%A1skova+Litomy%C5%A1l" target="_blank" rel="noopener">Mapa</a> <a href="https://studuj.upce.cz/prijimaci-rizeni/fr" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
@@ -951,7 +998,7 @@ summary:hover { color: var(--blue); }
         <strong><a href="https://studuj.upce.cz/obor/fr-nastenna-malba-sgrafito-mozaika-bakalarsky-prezencni-cestina" target="_blank" rel="noopener" class="field-link">Restaurování nástěnné malby a sgrafita</a>,<br> 
         <a href="https://studuj.upce.cz/obor/fr-umelecka-umelecko-remeslna-dila-z-kamene-stuku-sadry-terakoty-umeleho-kamene-bakalarsky" target="_blank" rel="noopener" class="field-link">Restaurování kamene a souvisejících materiálů</a>,<br> 
         <a href="https://studuj.upce.cz/obor/fr-papir-knizni-vazba-dokumenty-bakalarsky-prezencni-cestina" target="_blank" rel="noopener" class="field-link">Restaurování papíru, knižní vazby a dokumentů</a>,<br>
-        <a href="https://studuj.upce.cz/obor/fr-umelecka-umelecko-remeslna-dila-na-papirovych-textilnich-pergamenovych-podlozkach" target="_blank" rel="noopener" class="field-link">Restaurování uměleckých děl na papíru a plátně</a>.</strong>
+        <a href="https://studuj.upce.cz/obor/fr-umelecka-umelecko-remeslna-dila-na-papirovych-textilnich-pergamenovych-podlozkach" target="_blank" rel="noopener" class="field-link">Restaurování uměleckých děl na papíru a plátně</a> (v dřívějším přehledu jako Restaurování děl na papíru a pergamenu).</strong>
     </p>
 </div>
 
@@ -974,6 +1021,7 @@ summary:hover { color: var(--blue); }
         <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> 25–30 % (cca 4 studenti na ateliér).
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -987,9 +1035,9 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 31. 3.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Bez talentové zkoušky</dd></div><div><dt>Poplatek</dt><dd>600 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc.</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 31. 3.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Bez talentové zkoušky</dd></div><div><dt>Poplatek</dt><dd>600 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc.</dd></div></dl>
   <ul class="tags"><li>Grafický design a ilustrace</li><li class="tag-level">Náročnost přijetí: nižší (orientačně)</li><li class="tag-talent">Bez talentové zkoušky</li></ul>
-  <p class="links"><a href="https://studuj.upce.cz/fakulta-chemicko-technologicka" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Fakulta%20chemicko-technologick%C3%A1%20Pardubice&amp;source=firm&amp;id=360728&amp;ds=2&amp;x=15.7677122&amp;y=50.0498611&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://studuj.upce.cz/fakulta-chemicko-technologicka" target="_blank" rel="noopener">Zdroj údajů</a></p>
+  <p class="links"><a href="https://studuj.upce.cz/fakulta-chemicko-technologicka" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Fakulta%20chemicko-technologick%C3%A1%20Pardubice&amp;source=firm&amp;id=360728&amp;ds=2&amp;x=15.7677122&amp;y=50.0498611&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://studuj.upce.cz/fakulta-chemicko-technologicka#block-kraken-theme-views-block-programy-block-2" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
     <div class="detail-body">
@@ -1000,6 +1048,7 @@ summary:hover { color: var(--blue); }
         <strong>Konzultace</strong> v rámci Dnů otevřených dveří či individuálně.
     </p>
 </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1013,9 +1062,9 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 30. 4.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>SCIO test OSP (loni prosinec–květen), bez talentovky</dd></div><div><dt>Poplatek</dt><dd>990 Kč (dle podmínek 2026/27)</dd></div><div><dt>Typ studia</dt><dd>Bc. (3 roky)</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 30. 4.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>SCIO test OSP (loni prosinec–květen), bez talentovky</dd></div><div><dt>Poplatek</dt><dd>990 Kč (dle podmínek 2026/27)</dd></div><div><dt>Typ studia</dt><dd>Bc. (3 roky)</dd></div></dl>
   <ul class="tags"><li>Grafický design a ilustrace</li><li>Animace, film a hry</li><li>Fotografie</li><li class="tag-level">Náročnost přijetí: velmi vysoká (orientačně)</li><li class="tag-talent">Bez talentové zkoušky</li></ul>
-  <p class="links"><a href="https://fis.vse.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=V%C5%A0E%20Fakulty%20informatiky%20a%20statistiky%20Praha&amp;source=firm&amp;id=362379&amp;ds=2&amp;x=14.4411605&amp;y=50.0842701&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://fis.vse.cz/bakalarske-studium/prijimaci-rizeni/" target="_blank" rel="noopener">Zdroj údajů</a></p>
+  <p class="links"><a href="https://fis.vse.cz" target="_blank" rel="noopener">Web fakulty</a> <a href="https://www.vse.cz" target="_blank" rel="noopener">Web VŠE</a> <a href="https://mapy.com/cs/zakladni?q=V%C5%A0E%20Fakulty%20informatiky%20a%20statistiky%20Praha&amp;source=firm&amp;id=362379&amp;ds=2&amp;x=14.4411605&amp;y=50.0842701&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://fis.vse.cz/bakalarske-studium/prijimaci-rizeni/" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
     <div class="detail-body">
@@ -1055,22 +1104,23 @@ summary:hover { color: var(--blue); }
         <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> Extrémní zájem, přijímá se cca 60 studentů, hlásí se stovky. Šance cca <strong>10–15 %</strong>.
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
 </article>
 
-<article class="school" id="fa-cvut" data-group="technicka" data-city="Praha" data-fields="architektura design" data-level="3" data-talent="ano" data-status="wait">
+<article class="school" id="fa-cvut" data-group="technicka" data-city="Praha" data-fields="architektura design" data-level="3" data-talent="ano" data-status="ok">
   <div class="school-top">
     <div>
       <h3>FA ČVUT – Fakulta architektury Praha</h3>
       <p class="school-meta">Praha, technická nebo ekonomická fakulta</p>
     </div>
-    <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
+    <span class="badge badge-ok">Termín 2027/28 ověřen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni 1.–30. 11.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni dvoukolově od prosince do března</dd></div><div><dt>Poplatek</dt><dd>950 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc., Ing. arch.</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>1. 11. – 30. 11. 2026</dd></div><div><dt>Přijímací zkoušky</dt><dd>Termíny 2027 zatím nezveřejněny – budou průběžně doplněny (loni výtvarné zkoušky 12.–30. 1., pohovory 2.–13. 3.)</dd></div><div><dt>Poplatek</dt><dd>950 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc., Ing. arch.</dd></div></dl>
   <ul class="tags"><li>Architektura</li><li>Produkt, interiér, móda</li><li class="tag-level">Náročnost přijetí: střední (orientačně)</li></ul>
-  <p class="links"><a href="https://www.fa.cvut.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Th%C3%A1kurova%209%2C%20160%2000%20Praha%206&amp;source=addr&amp;id=11741367&amp;ds=2&amp;x=14.3896428&amp;y=50.1050400&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.fa.cvut.cz/cs/uchazeci/prijimaci-rizeni/prijimaci-rizeni/bakalarske-studium-prijimaci-rizeni" target="_blank" rel="noopener">Zdroj údajů</a></p>
+  <p class="links"><a href="https://www.fa.cvut.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Th%C3%A1kurova%209%2C%20160%2000%20Praha%206&amp;source=addr&amp;id=11741367&amp;ds=2&amp;x=14.3896428&amp;y=50.1050400&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.fa.cvut.cz/cs/uchazeci/prijimaci-rizeni/prijimaci-rizeni/bakalarske-studium-prijimaci-rizeni" target="_blank" rel="noopener">Přijímací řízení</a> <a href="https://www.fa.cvut.cz/FAQ" target="_blank" rel="noopener">Zdroj údajů (FAQ fakulty)</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
     <div class="detail-body">
@@ -1089,7 +1139,7 @@ summary:hover { color: var(--blue); }
 
         <div class="content-block">
             <h4>Průběh zkoušek</h4>
-            <p>Loni dvoukolová přijímací zkouška v období od 6. 12. do 13. 3., výsledky 1. kola do 20. 2. a 2. kola do 31. 3. Přesný obsah zkoušky pro rok 2027/28 ověřte v podmínkách, až je fakulta zveřejní.</p>
+            <p><strong>Přihlášky 2027/28:</strong> 1.–30. 11. 2026 přes e-přihlášku; přihláška se zařadí až po zaplacení poplatku.<br><strong>1. kolo:</strong> test OSP (Národní srovnávací zkoušky Scio), test prostorové představivosti a všeobecného přehledu a prezenční výtvarná zkouška. Uchazeči o Design přinášejí portfolio k výtvarné zkoušce. Při více přihláškách se výtvarná zkouška skládá u každé zvlášť, testy stačí jednou.<br><strong>2. kolo:</strong> ústní pohovor pro ty, kdo v 1. kole nezískali dost bodů k přijetí.<br>Loni proběhly výtvarné zkoušky 12.–30. 1. a pohovory 2.–13. 3.; konkrétní termíny 2027 budou průběžně doplněny, jakmile je fakulta zveřejní.</p>
         </div>
         
         <div class="content-block">
@@ -1113,7 +1163,7 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 18. 1.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni: SCIO OSP do 28. 3., domácí úkol 2. 2.–16. 3., tvůrčí úkol a pohovor 15.–23. 6.</dd></div><div><dt>Poplatek</dt><dd>900 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc. (4 roky), Ing. arch.</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 18. 1.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni: SCIO OSP do 28. 3., domácí úkol 2. 2.–16. 3., tvůrčí úkol a pohovor 15.–23. 6.</dd></div><div><dt>Poplatek</dt><dd>900 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc. (4 roky), Ing. arch.</dd></div></dl>
   <ul class="tags"><li>Architektura</li><li class="tag-level">Náročnost přijetí: střední (orientačně)</li></ul>
   <p class="links"><a href="https://www.fa.vutbr.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?source=base&amp;id=2564142&amp;ds=1&amp;x=16.5935200&amp;y=49.1867700&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.fa.vutbr.cz/pages/prijimacky.aspx" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
@@ -1140,6 +1190,7 @@ summary:hover { color: var(--blue); }
         <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> Úspěšnost 30–35 %.
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1153,7 +1204,7 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 15. 4.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni 12.–15. 5.</dd></div><div><dt>Poplatek</dt><dd>800 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc., Ing.</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 15. 4.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni 12.–15. 5.</dd></div><div><dt>Poplatek</dt><dd>800 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc., Ing.</dd></div></dl>
   <ul class="tags"><li>Produkt, interiér, móda</li><li class="tag-level">Náročnost přijetí: střední (orientačně)</li></ul>
   <p class="links"><a href="https://ldf.mendelu.cz/bakalarske-studium/" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=MENDELU%20Brno&amp;source=firm&amp;id=191599&amp;ds=2&amp;x=16.6161262&amp;y=49.2099190&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://ldf.mendelu.cz/bakalarske-studium/" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
@@ -1186,6 +1237,7 @@ summary:hover { color: var(--blue); }
         <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> Šance 30–40 % (výběrový obor na jinak dostupné fakultě).
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1199,7 +1251,7 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 14. 5.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Bez talentové zkoušky</dd></div><div><dt>Poplatek</dt><dd>700 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc.</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 14. 5.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Bez talentové zkoušky</dd></div><div><dt>Poplatek</dt><dd>700 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc.</dd></div></dl>
   <ul class="tags"><li>Produkt, interiér, móda</li><li class="tag-level">Náročnost přijetí: nižší (orientačně)</li><li class="tag-talent">Bez talentové zkoušky</li></ul>
   <p class="links"><a href="https://www.vspj.cz/cs/zajemce-o-studium/e-prihlaska" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=V%C5%A0PJ%20Tolst%C3%A9ho%20Jihlava&amp;source=firm&amp;id=664046&amp;ds=2&amp;x=15.5826000&amp;y=49.3990478&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.vspj.cz/cs/zajemce-o-studium/e-prihlaska" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
@@ -1214,6 +1266,7 @@ summary:hover { color: var(--blue); }
 <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> > 70 %
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1227,7 +1280,7 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 31. 3.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Bez zkoušky, podle prospěchu ze SŠ</dd></div><div><dt>Poplatek</dt><dd>650 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc. (3 roky)</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 31. 3.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Bez zkoušky, podle prospěchu ze SŠ</dd></div><div><dt>Poplatek</dt><dd>650 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc. (3 roky)</dd></div></dl>
   <ul class="tags"><li>Restaurování</li><li class="tag-level">Náročnost přijetí: střední (orientačně)</li><li class="tag-talent">Bez talentové zkoušky</li></ul>
   <p class="links"><a href="https://www.vscht.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=V%C5%A0CHT%20Praha&amp;source=firm&amp;id=362957&amp;ds=2&amp;x=14.3898814&amp;y=50.1033646&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://studuj.vscht.cz/studijni-programy/program/B104/" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
@@ -1250,6 +1303,7 @@ summary:hover { color: var(--blue); }
         <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> Šance 40–50 %.
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1265,7 +1319,7 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 31. 3., prodlouženo do 12. 4.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni talentové zkoušky 27. 4.–17. 5. 2026</dd></div><div><dt>Poplatek</dt><dd>cca 600–650 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc. (3 roky)</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 31. 3., prodlouženo do 12. 4.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni talentové zkoušky 27. 4.–17. 5. 2026</dd></div><div><dt>Poplatek</dt><dd>cca 600–650 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc. (3 roky)</dd></div></dl>
   <ul class="tags"><li>Grafický design a ilustrace</li><li>Volné umění</li><li>Produkt, interiér, móda</li><li>Teorie umění a učitelství</li><li class="tag-level">Náročnost přijetí: vysoká (orientačně)</li></ul>
   <p class="links"><a href="https://www.uhk.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=n%C3%A1m.%20Svobody%20301%2F1%2C%20Hradec%20Kr%C3%A1lov%C3%A9&amp;source=addr&amp;id=9052185&amp;ds=2&amp;x=15.8267379&amp;y=50.2095240&amp;z=19" target="_blank" rel="noopener">Mapa</a> <a href="https://www.uhk.cz/cs/pedagogicka-fakulta/prijimaci-zkousky/studijni-programy/graficka-a-intermedialni-tvorba" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
@@ -1300,6 +1354,7 @@ summary:hover { color: var(--blue); }
         <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> Grafika 23–30 %, Textil 44 %.
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1313,9 +1368,9 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 28. 2.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni v červnu</dd></div><div><dt>Poplatek</dt><dd>940 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc. (učitelství výtvarné výchovy)</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Předběžně do 28. 2. 2027 (celouniverzitní uzávěrka UK); podmínky fakulty zatím nevyšly, budou průběžně doplněny</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni v červnu</dd></div><div><dt>Poplatek</dt><dd>940 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc. (učitelství výtvarné výchovy)</dd></div></dl>
   <ul class="tags"><li>Teorie umění a učitelství</li><li class="tag-level">Náročnost přijetí: vysoká (orientačně)</li></ul>
-  <p class="links"><a href="https://pedf.cuni.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Pedagogick%C3%A1%20fakulta%20Univerzity%20Karlovy%20Praha&amp;source=firm&amp;id=360713&amp;ds=2&amp;x=14.4203638&amp;y=50.0798326&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://pedf.cuni.cz" target="_blank" rel="noopener">Zdroj údajů</a></p>
+  <p class="links"><a href="https://pedf.cuni.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Pedagogick%C3%A1%20fakulta%20Univerzity%20Karlovy%20Praha&amp;source=firm&amp;id=360713&amp;ds=2&amp;x=14.4203638&amp;y=50.0798326&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://pedf.cuni.cz" target="_blank" rel="noopener">Zdroj údajů</a> <a href="https://nakarlovku.cz/prijimaci-rizeni" target="_blank" rel="noopener">Termíny UK</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
     <div class="detail-body">
@@ -1330,6 +1385,7 @@ summary:hover { color: var(--blue); }
         <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> Velmi náročné (< 25 %).
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1371,7 +1427,7 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 15. 3.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni talentové koncem května, ústní do poloviny června</dd></div><div><dt>Poplatek</dt><dd>790 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc.</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 15. 3.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni talentové koncem května, ústní do poloviny června</dd></div><div><dt>Poplatek</dt><dd>790 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc.</dd></div></dl>
   <ul class="tags"><li>Teorie umění a učitelství</li><li>Volné umění</li><li class="tag-level">Náročnost přijetí: vysoká (orientačně)</li></ul>
   <p class="links"><a href="https://www.pdf.upol.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Pedagogick%C3%A1%20fakulta%20UPOL%20Olomouc&amp;source=base&amp;id=2585757&amp;ds=2&amp;x=17.2648460&amp;y=49.5955930&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.pdf.upol.cz" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
@@ -1386,6 +1442,7 @@ summary:hover { color: var(--blue); }
         <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> Jedna z nejpřísnějších statistik (cca 30 %).
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1399,20 +1456,23 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 15. 3.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni ve druhé polovině května</dd></div><div><dt>Poplatek</dt><dd>800 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Navazující Mgr. (po bakaláři)</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 15. 3.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni ve druhé polovině května</dd></div><div><dt>Poplatek</dt><dd>800 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc. (výtvarná výchova se zaměřením na vzdělávání) i navazující Mgr.</dd></div></dl>
   <ul class="tags"><li>Teorie umění a učitelství</li><li class="tag-level">Náročnost přijetí: střední (orientačně)</li></ul>
   <p class="links"><a href="https://pdf.osu.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Pedagogick%C3%A1%20fakulta%20Ostravsk%C3%A9%20univerzity%20Ostrava&amp;source=firm&amp;id=362921&amp;ds=2&amp;x=18.2622000&amp;y=49.8268000&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://pdf.osu.cz" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
     <div class="detail-body">
 <div class="content-block">
-            <p><a href="https://pdf.osu.cz/kvv/" target="_blank" rel="noopener" class="field-link"><strong>Katedra výtvarné výchovy</strong></a>.<br>Navazující magisterské studium (Učitelství pro SŠ/ZUŠ). Portfolio min. 20 prací. Originály (kresby, malby) ve formátech A4 až A1. Menší formáty je vhodné adjustovat (podlepit) na čtvrtky, aby působily úhledně.<br>
+            <p><a href="https://pdf.osu.cz/kvv/" target="_blank" rel="noopener" class="field-link"><strong>Katedra výtvarné výchovy</strong></a>.<br>
+            <strong>Pro maturanty – bakalářské studium:</strong> <a href="https://www.osu.cz/studijniobory/?specializaceid=2865&amp;kombinaceid=5828" target="_blank" rel="noopener" class="field-link">Výtvarná výchova se zaměřením na vzdělávání (pro ZŠ)</a>, <a href="https://www.osu.cz/vyber-si-studijni-obor/?specializaceid=3139&amp;kombinaceid=5706" target="_blank" rel="noopener" class="field-link">Výtvarná výchova se zaměřením na vzdělávání (pro SŠ)</a> a Výtvarná výchova pro SŠ a ZUŠ se zaměřením na vzdělávání; studuje se v kombinaci s druhým oborem. Přijímací zkouška je motivační pohovor nad kolekcí 20–25 domácích prací (kresba, malba, případně další techniky) a rozhovor o dějinách výtvarné kultury (po 50 bodech).<br>
+            <strong>Navazující magisterské studium</strong> (Učitelství výtvarné výchovy pro 2. stupeň ZŠ, pro SŠ a pro SŠ a ZUŠ). Portfolio min. 20 prací. Originály (kresby, malby) ve formátech A4 až A1. Menší formáty je vhodné adjustovat (podlepit) na čtvrtky, aby působily úhledně.<br>
                 <p><a href="https://pdf.osu.cz/studijniobory/?specializaceid=3845" target="_blank" rel="noopener" class="field-link"><strong>Prezentace a edukace v kultuře</strong></a></p>
             <strong>Konzultace:</strong> <strong>ANO.</strong></p>
              <div class="stats-box">
             <strong>Orientační úspěšnost (z původního přehledu, neověřeno):</strong> Úspěšnost 35–45 %.
         </div>
         </div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1427,9 +1487,9 @@ summary:hover { color: var(--blue); }
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 28. 2.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Dvoukolové (písemná a ústní část)</dd></div><div><dt>Poplatek</dt><dd>940 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc.</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Předběžně do 28. 2. 2027 (celouniverzitní uzávěrka UK); podmínky fakulty zatím nevyšly, budou průběžně doplněny</dd></div><div><dt>Přijímací zkoušky</dt><dd>Dvoukolové (písemná a ústní část)</dd></div><div><dt>Poplatek</dt><dd>940 Kč (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc.</dd></div></dl>
   <ul class="tags"><li>Teorie umění a učitelství</li><li class="tag-level">Náročnost přijetí: vysoká (orientačně)</li><li class="tag-talent">Bez talentové zkoušky</li></ul>
-  <p class="links"><a href="https://www.ff.cuni.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Filozofick%C3%A1%20fakulta%20Univerzita%20Karlova%20Praha&amp;source=firm&amp;id=360712&amp;ds=2&amp;x=14.4158573&amp;y=50.0889733&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://is.cuni.cz/studium/prijimacky/" target="_blank" rel="noopener">Zdroj údajů</a></p>
+  <p class="links"><a href="https://www.ff.cuni.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Filozofick%C3%A1%20fakulta%20Univerzita%20Karlova%20Praha&amp;source=firm&amp;id=360712&amp;ds=2&amp;x=14.4158573&amp;y=50.0889733&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://is.cuni.cz/studium/prijimacky/" target="_blank" rel="noopener">Zdroj údajů</a> <a href="https://nakarlovku.cz/prijimaci-rizeni" target="_blank" rel="noopener">Termíny UK</a></p>
   <details>
     <summary>Obory, portfolio, zkoušky a konzultace</summary>
     <div class="detail-body">
@@ -1470,6 +1530,7 @@ Motivační dopis (často vyžadován): Někdy se odevzdává předem nebo nese 
 Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe uměleckého díla.
 <strong>Orientační úspěšnost (neověřeno): cca 20–25 %.</strong><br>
     </p></div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1545,7 +1606,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 31. 5.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Portfolio, pak pohovor s úkolem</dd></div><div><dt>Poplatek a školné</dt><dd>Školné 56 000 Kč za rok (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>DiS. (VOŠ, ne vysoká škola)</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 31. 5.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Portfolio, pak pohovor s úkolem</dd></div><div><dt>Poplatek a školné</dt><dd>Školné 56 000 Kč za rok (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>DiS. (VOŠ, ne vysoká škola)</dd></div></dl>
   <ul class="tags"><li>Grafický design a ilustrace</li><li>Animace, film a hry</li><li class="tag-level">Náročnost přijetí: nižší (orientačně)</li></ul>
   <p class="links"><a href="https://scholastika.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=Scholastika%20%C5%98%C3%ADmsk%C3%A1%20Praha&amp;source=firm&amp;id=12982654&amp;ds=2&amp;x=14.4332460&amp;y=50.0777688&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://scholastika.cz" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
@@ -1560,6 +1621,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
             <strong>2. kolo (Pohovor + Úkol):</strong> Pokud postoupíte, jdete k ústnímu pohovoru. Komise se ptá na vaši motivaci, proč chcete na Scholastiku a rozebírá s vámi portfolio. Součástí může být i menší kreativní úkol na místě nebo domácí zadání (např. navrhnout plakát na dané téma nebo zpracovat koncept), kterým prokážete, jak uvažujete.<br>
             <strong>Školné za rok:</strong> 56 000 Kč<br>
             <strong>Orientační úspěšnost (neověřeno):</strong> Úspěšnost > 60 %.</p></div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1573,7 +1635,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni do 12. 3. a do 31. 8.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni 19. 3. a 7. 9. 2026 (rozhovor nad portfoliem)</dd></div><div><dt>Poplatek a školné</dt><dd>Školné 54 000 Kč za semestr (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>BcA. (3 roky)</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni do 12. 3. a do 31. 8.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Loni 19. 3. a 7. 9. 2026 (rozhovor nad portfoliem)</dd></div><div><dt>Poplatek a školné</dt><dd>Školné 54 000 Kč za semestr (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>BcA. (3 roky)</dd></div></dl>
   <ul class="tags"><li>Grafický design a ilustrace</li><li>Volné umění</li><li>Fotografie</li><li>Produkt, interiér, móda</li><li class="tag-level">Náročnost přijetí: nižší (orientačně)</li></ul>
   <p class="links"><a href="https://www.adi.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/zakladni?q=ART%20%26%20DESIGN%20INSTITUT%2C%20s.r.o%20Praha&amp;source=firm&amp;id=2145077&amp;ds=2&amp;x=14.4693722&amp;y=50.0779833&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.vysokeskoly.cz/katalog-vs/art-design-institut/264" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
@@ -1586,6 +1648,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
             <strong>Konzultace:</strong> ANO, individuální před přijímačkami.<br>
             <strong>Zkouška:</strong> Průběh: Zkouška je koncipována spíše jako rozhovor nad portfoliem. Přinesete ukázky svých prací (cca 10–15 ks). Komise (často vedoucí ateliéru) zjišťuje váš talentový potenciál, ale také osobnostní předpoklady. Zkoumá se, zda jste schopni zvládnout i teoretické předměty (marketing, dějiny umění). Loni měla škola dva termíny přijímaček (březen a září). Atmosféra je méně stresující než na státních školách.<br>
             <strong>Orientační úspěšnost (neověřeno):</strong> Úspěšnost 84 %.</p></div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1599,7 +1662,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno</dd></div><div><dt>Přijímací zkoušky</dt><dd>Portfolio a pohovor v angličtině</dd></div><div><dt>Poplatek a školné</dt><dd>Školné 90–120 tis. Kč za rok (neověřeno)</dd></div><div><dt>Typ studia</dt><dd>Bc. (britská akreditace)</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno</dd></div><div><dt>Přijímací zkoušky</dt><dd>Portfolio a pohovor v angličtině</dd></div><div><dt>Poplatek a školné</dt><dd>Školné 90–120 tis. Kč za rok (neověřeno)</dd></div><div><dt>Typ studia</dt><dd>Bc. (britská akreditace)</dd></div></dl>
   <ul class="tags"><li>Grafický design a ilustrace</li><li>Volné umění</li><li class="tag-level">Náročnost přijetí: nižší (orientačně)</li></ul>
   <p class="links"><a href="https://www.praguecityuniversity.cz" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.com/cs/letecka?q=Belgick%C3%A1%2022%2C%20Praha%202&amp;source=addr&amp;id=8941325&amp;ds=2&amp;x=14.4362853&amp;y=50.0727158&amp;z=17" target="_blank" rel="noopener">Mapa</a> <a href="https://www.praguecityuniversity.cz" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
@@ -1612,6 +1675,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
             Motivační dopis (Letter of Motivation): V angličtině.<br>
             Pohovor: Probíhá v angličtině s vedoucím programu. Diskutuje se o vaší práci a cílech. Specifikum – angličtina: Protože se učí v angličtině, musíte doložit úroveň jazyka (certifikát, maturita z AJ na určité úrovni, nebo absolvování jejich interního testu). Obvykle se vyžaduje úroveň B2.<br>
             <strong>Orientační úspěšnost (neověřeno):</strong> Acceptance Rate 80–89 %.</p></div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1625,7 +1689,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
     </div>
     <span class="badge badge-wait">Termín 2027/28 zatím nevyhlášen</span>
   </div>
-  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Zatím nezveřejněno (loni 31. 1. – 31. 5.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Online podklady, pak pohovor v angličtině</dd></div><div><dt>Poplatek a školné</dt><dd>Školné 45 000 Kč za semestr (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc. (v angličtině)</dd></div></dl>
+  <dl class="facts"><div><dt>Přihláška 2027/28</dt><dd>Bude průběžně doplněno (loni 31. 1. – 31. 5.)</dd></div><div><dt>Přijímací zkoušky</dt><dd>Online podklady, pak pohovor v angličtině</dd></div><div><dt>Poplatek a školné</dt><dd>Školné 45 000 Kč za semestr (loňský údaj)</dd></div><div><dt>Typ studia</dt><dd>Bc. (v angličtině)</dd></div></dl>
   <ul class="tags"><li>Architektura</li><li class="tag-level">Náročnost přijetí: nižší (orientačně)</li></ul>
   <p class="links"><a href="https://www.archip.eu" target="_blank" rel="noopener">Web školy</a> <a href="https://mapy.cz/zakladni?q=ARCHIP+Praha" target="_blank" rel="noopener">Mapa</a> <a href="https://www.archip.eu" target="_blank" rel="noopener">Zdroj údajů</a></p>
   <details>
@@ -1639,6 +1703,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
             Esej (Essay): Krátký text na zadané téma nebo motivační dopis (proč chcete být architektem).<br>
             Pohovor: Probíhá v angličtině. Zjišťuje se všeobecný rozhled, zájem o architekturu a schopnost komunikovat v jazyce. Specifikum: Stejně jako u PCU je podmínkou přijetí prokázání znalosti angličtiny. Termíny jsou "rolling admissions" – přihlášky se posuzují průběžně, dokud není naplněna kapacita.<br>
             <strong>Orientační úspěšnost (neověřeno):</strong> Úspěšnost 65 %.</p></div>
+      <p class="pending">Podmínky přijímacího řízení pro rok 2027/28 škola zatím nezveřejnila. Chybějící a loňské údaje budou průběžně doplňovány a aktualizovány.</p>
       <p class="checked">Klíčové údaje nahoře ověřeny 16. 9. 2026. Podrobný text níže vychází z původního přehledu; před podáním přihlášky si vše potvrďte na webu školy.</p>
     </div>
   </details>
@@ -1679,7 +1744,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
       </div>
     </div>
     <div class="footer-note">
-      <p>Klíčové údaje ověřeny na webech škol 16. 9. 2026. Termíny i podmínky se mohou změnit – před podáním přihlášky je vždy potvrďte na webu školy.</p>
+      <p>Klíčové údaje ověřeny na webech škol 16. 9. 2026 (13 škol má termíny 2027/28 vyhlášené). Údaje, které školy zatím nezveřejnily, budou průběžně doplňovány. Termíny i podmínky se mohou změnit – před podáním přihlášky je vždy potvrďte na webu školy.</p>
       <p>Počet návštěv: <strong id="informace_k_vysokym_skolam">načítám…</strong></p>
       <p>© 2026 | Vygenerováno v Gemini Pro pod promptovým vedením <a href="https://www.spse.cz/">Mgr. Jaroslava Svobody ze SPŠE a VOŠ Pardubice</a>, údaje byly ručně kontrolovány</p>
     </div>
@@ -1731,6 +1796,7 @@ Jak to funguje: Rozprava nad přečtenými texty a schopnost estetické reflexe 
       upcoming.push({ n: n, name: link.textContent, href: link.getAttribute("href"), date: td.parentElement.querySelector("td strong").textContent });
     }
   });
+  upcoming.sort(function (a, b) { return a.n - b.n; });
   var next = $("#nextDeadline");
   if (upcoming.length) {
     var f = upcoming[0];
